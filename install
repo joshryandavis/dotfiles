@@ -33,6 +33,9 @@ git add . || true
 git commit -m "update dotfiles" || true
 git push origin main
 
+# Update the system
+sudo pacman -Syu --noconfirm
+
 # Check if the file exists
 if [ -f "user_installed_packages.txt" ]; then
   # Read the package names from the file and install them
@@ -44,3 +47,15 @@ if [ -f "user_installed_packages.txt" ]; then
 else
   echo "The file 'user_installed_packages.txt' does not exist."
 fi
+
+# Update mkinitcpio and grub
+sudo mkinitcpio -P
+sudo grub-update
+
+# Ensure services are enabled
+sudo systemctl enable NetworkManager.service
+sudo systemctl enable bluetooth.service
+sudo systemctl enable cups.service
+sudo systemctl enable sshd.service
+sudo systemctl enable cockpit.socket
+sudo systemctl enable docker.service
