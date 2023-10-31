@@ -49,7 +49,7 @@ HIST_STAMPS="dd/mm/yyyy"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM="~/.oh-my-zsh/custom"
 # Which plugins would you like to load?
-plugins=(ssh-agent zsh-autosuggestions zsh-syntax-highlighting zsh-navigation-tools zsh-interactive-cd virtualenv tmux systemd bun bazel branch git archlinux sudo command-not-found common-aliases dotnet git-auto-fetch rust docker docker-compose docker-machine emoji dotenv extract flutter fzf gh)
+plugins=(ssh-agent zsh-autosuggestions zsh-syntax-highlighting zsh-navigation-tools zsh-interactive-cd virtualenv tmux systemd bun bazel branch git archlinux sudo command-not-found common-aliases dotnet git-auto-fetch rust docker docker-compose docker-machine emoji dotenv extract flutter fzf gh cp command-not-found copypath git-extras aliases autoenv direnv vscode zoxide)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -70,9 +70,9 @@ export LANG=en_US.UTF-8
 # Compilation flags
 export ARCHFLAGS="-arch x86_64"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# Set personal aliases autoenv direnv, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases autoenv direnv can be placed here, though oh-my-zsh
+# users are encouraged to define aliases autoenv direnv within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -80,3 +80,5 @@ export ARCHFLAGS="-arch x86_64"
 
 alias vim="nvim"
 alias vi="nvim"
+
+RUSTC_WRAPPER=sccache

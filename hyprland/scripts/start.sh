@@ -15,6 +15,8 @@ killall -9 thunderbird
 killall -9 teams-for-linux
 killall -9 electron
 killall -9 waybar
+killall -9 firefox
+killall -9 cider
 
 # wait for waybar to exit
 until ! pgrep -f 'waybar'; do sleep 1; done
@@ -41,12 +43,14 @@ copyq --start-server &
 udiskie --appindicator &
 nm-applet --indicator &
 blueman-applet &
-
 wayvnc &
 swaync &
+
+firefox &
 thunderbird &
 bitwarden-desktop &
 teams-for-linux &
+cider &
 
 sleep 2
 notify-send -t 1000 "Hyprland started"

@@ -2,6 +2,7 @@ accerciser
 alacritty
 amd-ucode
 apple-fonts
+autoenv-git
 base
 base-devel
 bitwarden
@@ -27,6 +28,8 @@ copyq
 d-spy
 dconf-editor
 devhelp
+direnv
+dnsmasq
 docker
 docker-buildx
 docker-compose
@@ -34,6 +37,7 @@ docker-desktop
 docker-rootless-extras
 dolphin
 efibootmgr
+electron
 electron27-bin
 endeavour
 eog
@@ -92,6 +96,7 @@ hyprland-nvidia-git
 iagno
 intellij-idea-ultimate-edition
 intellij-idea-ultimate-edition-jre
+iptables-nft
 iwd
 jbr-linux-x64
 jq
@@ -113,8 +118,10 @@ mdp
 mousepad
 mpv
 nano
+neovim
 network-manager-applet
 networkmanager
+nushell
 nvidia-open-beta-dkms
 nvidia-prime
 nvidia-settings-beta
@@ -135,6 +142,7 @@ otf-hermit-nerd
 otf-opendyslexic-nerd
 otf-overpass-nerd
 pamixer
+paru
 pavucontrol
 pipewire-alsa
 pipewire-pulse
@@ -147,7 +155,9 @@ qt5ct
 qt6-wayland
 qt6ct
 quadrapassel
+rustup
 sassc
+screen
 seahorse
 slurp
 smartmontools
@@ -160,7 +170,8 @@ swell-foop
 swww
 sysprof
 tali
-teams-for-linux
+teams-for-linux-git
+thorium-browser-bin
 thunar
 thunar-archive-plugin
 thunar-volman
@@ -222,6 +233,7 @@ udiskie
 update-grub
 viewnior
 vim
+virt-manager
 visual-studio-code-bin
 vkd3d
 vlc
@@ -242,5 +254,6 @@ xorg-xwayland-git
 xwaylandvideobridge-bin
 yay-bin
 zoom
+zoxide
 zram-generator
 zsh

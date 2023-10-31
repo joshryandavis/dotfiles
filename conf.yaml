@@ -182,4 +182,4 @@
     - cd ~/.themes/whitesur-icon-theme && sh install.sh
     - cd ~/.themes/whitesur-cursors && sh install.sh
     - cd ~/.themes/whitesur-kde && sh install.sh
-    - hyprctl reload
+#    - hyprctl reload

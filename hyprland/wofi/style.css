@@ -43,11 +43,7 @@ padding: 5px;
   border-radius: 3px;
 }
 
-#entry:nth-child(even){
+#entry:nth-child(even){}
 
-}
-
-#entry:selected {
-}
-#text:selected {
-}
+#entry:selected {}
+#text:selected {}
