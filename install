@@ -40,7 +40,7 @@ sudo pacman -Syu --noconfirm
 if [ -f "user_installed_packages.txt" ]; then
   # Read the package names from the file and install them
   while read -r package; do
-    sudo pacman -S --noconfirm "$package"
+    sudo pacman -S --noconfirm --needed "$package"
   done < user_installed_packages.txt
 
   echo "All user-installed packages have been installed."
@@ -59,3 +59,8 @@ sudo systemctl enable cups.service
 sudo systemctl enable sshd.service
 sudo systemctl enable cockpit.socket
 sudo systemctl enable docker.service
+# Nvidia
+sudo systemctl enable nvidia-persistenced.service
+sudo systemctl enable nvidia-suspend.service
+sudo systemctl enable nvidia-resume.service
+sudo systemctl enable nvidia-hibernate.service
