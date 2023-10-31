@@ -34,9 +34,6 @@ docker-desktop
 docker-rootless-extras
 dolphin
 efibootmgr
-electron24-bin
-electron25-bin
-electron26-bin
 electron27-bin
 endeavour
 eog
