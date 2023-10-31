@@ -32,3 +32,15 @@ fi
 git add . || true
 git commit -m "update dotfiles" || true
 git push origin main
+
+# Check if the file exists
+if [ -f "user_installed_packages.txt" ]; then
+  # Read the package names from the file and install them
+  while read -r package; do
+    sudo pacman -S --noconfirm "$package"
+  done < user_installed_packages.txt
+
+  echo "All user-installed packages have been installed."
+else
+  echo "The file 'user_installed_packages.txt' does not exist."
+fi
