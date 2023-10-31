@@ -1,0 +1,7 @@
+{
+    "dependencies": {
+        "sass": "latest",
+        "typescript": "latest",
+        "ts-node": "latest"
+    }
+}

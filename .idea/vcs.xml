@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/_dotbot" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/_dotbot/lib/pyyaml" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/system/dependencies/zsh/zsh-autosuggestions" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/system/dependencies/zsh/zsh-syntax-highlighting" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/theme/dependencies/themes/whitesur-cursors" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/theme/dependencies/themes/whitesur-gtk-theme" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/theme/dependencies/themes/whitesur-icon-theme" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/theme/dependencies/themes/whitesur-kde" vcs="Git" />
+  </component>
+</project>

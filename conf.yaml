@@ -1,0 +1,185 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean:
+    ~/:
+      force: true
+    ~/.config:
+      force: true
+      recursive: true
+
+- create:
+    ~/.local/share/icons/WhiteSur-cursors:
+      force: true
+
+- link:
+    ~/.bash_logout: 
+      path: system/bash/bash_logout
+      force: true
+    ~/.bash_profile: 
+      path: system/bash/bash_profile
+      force: true
+    ~/.bashrc: 
+      path: system/bash/bashrc
+      force: true
+    ~/.config/copyq/copyq.conf: 
+      path: apps/copyq/copyq.conf
+      force: true
+    ~/.config/fontconfig: 
+      path: theme/fontconfig
+      force: true
+    ~/.config/foot: 
+      path: apps/foot
+      force: true
+    ~/.config/alacritty: 
+      path: apps/alacritty
+      force: true
+    ~/.config/gtk-3.0: 
+      path: theme/gtk3
+      force: true
+    ~/.config/hypr: 
+      path: hyprland
+      force: true
+    ~/.config/Kvantum: 
+      path: theme/kvantum
+      force: true
+    ~/.config/latte: 
+      path: theme/latte
+      force: true
+    ~/.config/swaync:
+      path: system/swaync
+      force: true
+    ~/.config/mimeapps.list: 
+      path: system/misc/mimeapps.list
+      force: true
+    ~/.config/nvim: 
+      path: editors/nvim
+      force: true
+    # ~/.config/nwg-look: 
+    #   path: theme/nwg-look
+    #   force: true
+    ~/.config/qt5ct: 
+      path: theme/qt5ct
+      force: true
+    ~/.config/qt6ct: 
+      path: theme/qt6ct
+      force: true
+    ~/.config/swappy: 
+      path: apps/swappy
+      force: true
+    ~/.config/Thunar: 
+      path: apps/thunar
+      force: true
+    ~/.config/xdg-terminals.list: 
+      path: system/misc/xdg-terminals.list
+      force: true
+    ~/.config/user-dirs.dirs: 
+      path: system/misc/user-dirs.dirs
+      force: true
+    ~/.config/user-dirs.locale: 
+      path: system/misc/user-dirs.locale
+      force: true
+    ~/.config/xsettingsd: 
+      path: theme/xsettingsd
+      force: true
+    ~/.config/systemd/user: 
+      path: system/systemd
+      force: true
+    ~/.config/yay: 
+      path: system/yay
+      force: true
+    ~/.config/xfce4: 
+      path: theme/xfce4
+      force: true
+    ~/.config/Code/User/settings.json: 
+      path: editors/code/settings.json
+      force: true
+    ~/.config/Code - OSS/User/settings.json: 
+      path: editors/code/settings.json
+      force: true
+    ~/.config/VSCodium/User/settings.json:
+      path: editors/code/settings.json
+      force: true
+    ~/.config/autostart: 
+      path: system/autostart
+      force: true
+
+    ~/.gitconfig: 
+      path: system/git/gitconfig
+      force: true
+    ~/.gtkrc-2.0: 
+      path: theme/gtk2/gtkrc-2.0
+    ~/.config/btop:
+      path: apps/btop
+      force: true
+    ~/.config/neofetch:
+      path: system/neofetch
+      force: true
+    ~/.config/lutris:
+      path: apps/lutris
+      force: true
+    # ~/.ssh/id_ed25519.pub: 
+    #   path: system/ssh/keys/id_ed25519.pub
+    #   force: true
+    # ~/.ssh/config: 
+    #   path: system/ssh/config
+      # force: true
+    ~/.themes: 
+      path: theme/dependencies/themes
+      force: true
+    ~/wallpapers: 
+      path: theme/wallpapers
+      force: true
+    ~/.tmux.conf: 
+      path: system/tmux/tmux.conf
+      force: true
+    ~/.Xresources: 
+      path: theme/xresources/Xresources
+      force: true
+    ~/.zshrc: 
+      path: system/zsh/zshrc
+      force: true
+    ~/.package.json: 
+      path: system/npm/package.json
+      force: true
+    ~/.oh-my-zsh/custom/plugins: 
+      path: system/dependencies/zsh
+      force: true
+    ~/.config/electron-flags.conf: 
+      path: system/electron-flags.conf
+      force: true
+    ~/.config/code-flags.conf: 
+      path: system/electron-flags.conf
+      force: true
+    ~/.config/codium-flags.conf: 
+      path: system/electron-flags.conf
+      force: true
+    ~/.config/vscodium-flags.conf: 
+      path: system/electron-flags.conf
+      force: true
+    ~/.config/electron24-flags.conf: 
+      path: system/electron-flags.conf
+      force: true
+    ~/.config/electron25-flags.conf: 
+      path: system/electron-flags.conf
+      force: true
+    ~/.config/electron26-flags.conf: 
+      path: system/electron-flags.conf
+      force: true
+    ~/.config/electron27-flags.conf: 
+      path: system/electron-flags.conf
+      force: true
+
+- shell:
+    # - systemctl --user enable ssh-agent
+    # - systemctl --user daemon-reload
+    # - rm -f ~/.ssh/id_ed25519 
+    # - gpg -d system/ssh/keys/id_ed25519.gpg > ~/.ssh/id_ed25519
+    # - chmod 400 ~/.ssh/id_ed25519
+    - cd ~/.themes/whitesur-gtk-theme && sh install.sh -c Dark -c Light -t all
+    - cd ~/.themes/whitesur-icon-theme && sh install.sh
+    - cd ~/.themes/whitesur-cursors && sh install.sh
+    - cd ~/.themes/whitesur-kde && sh install.sh
+    - hyprctl reload

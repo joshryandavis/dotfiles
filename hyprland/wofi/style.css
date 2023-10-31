@@ -1,0 +1,53 @@
+* {
+  font-family: 'SF Pro';
+  font-size: 1rem;
+}
+
+window {
+  /* background-color: rgba(0,0,0,0.1); */
+  border-radius: 6px;
+}
+
+#input {
+  padding: 10px;
+  border-radius: 3px;
+  border: none;
+  /* line-height: 100%; */
+  font-size: 2rem;
+}
+
+#input image {
+  margin-left: -100px;
+}
+
+#inner-box {
+  /* background-color: rgba(0,0,0,0.2); */
+}
+
+#outer-box {
+  /* margin: 5px; */
+  padding: 5px;
+  /* background-color: rgba(0,0,0,0.2); */
+}
+
+#scroll {
+  padding-top: 5px;
+}
+
+#text {
+padding: 5px;
+/* color: white; */
+}
+
+#entry {
+  border-radius: 3px;
+}
+
+#entry:nth-child(even){
+
+}
+
+#entry:selected {
+}
+#text:selected {
+}
