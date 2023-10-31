@@ -55,7 +55,7 @@
       path: system/misc/mimeapps.list
       force: true
     ~/.config/nvim: 
-      path: editors/nvim
+      path: apps/nvim
       force: true
     # ~/.config/nwg-look: 
     #   path: theme/nwg-look
@@ -81,8 +81,8 @@
     ~/.config/user-dirs.locale: 
       path: system/misc/user-dirs.locale
       force: true
-    ~/.config/xsettingsd: 
-      path: theme/xsettingsd
+    ~/.config/xsettingsd.conf: 
+      path: theme/xsettingsd.conf
       force: true
     ~/.config/systemd/user: 
       path: system/systemd
@@ -94,13 +94,13 @@
       path: theme/xfce4
       force: true
     ~/.config/Code/User/settings.json: 
-      path: editors/code/settings.json
+      path: apps/code/settings.json
       force: true
     ~/.config/Code - OSS/User/settings.json: 
-      path: editors/code/settings.json
+      path: apps/code/settings.json
       force: true
     ~/.config/VSCodium/User/settings.json:
-      path: editors/code/settings.json
+      path: apps/code/settings.json
       force: true
     ~/.config/autostart: 
       path: system/autostart
@@ -136,7 +136,7 @@
       path: system/tmux/tmux.conf
       force: true
     ~/.Xresources: 
-      path: theme/xresources/Xresources
+      path: theme/Xresources
       force: true
     ~/.zshrc: 
       path: system/zsh/zshrc
