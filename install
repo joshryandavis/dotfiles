@@ -50,12 +50,11 @@ fi
 
 # Update mkinitcpio and grub
 sudo mkinitcpio -P
-sudo grub-update
+sudo update-grub
 
 # Ensure services are enabled
 sudo systemctl enable NetworkManager.service
 sudo systemctl enable bluetooth.service
-sudo systemctl enable cups.service
 sudo systemctl enable sshd.service
 sudo systemctl enable cockpit.socket
 sudo systemctl enable docker.service
