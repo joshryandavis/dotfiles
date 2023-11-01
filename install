@@ -35,7 +35,7 @@ sudo pacman -Syu --noconfirm
 if [ -f "packages.txt" ]; then
   # Read the package names from the file and install them
   while read -r package; do
-    sudo yay -S --noconfirm --needed "$package"
+    yay -S --noconfirm --needed "$package"
   done < packages.txt
   echo "All user-installed packages have been installed."
 else

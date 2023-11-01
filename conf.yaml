@@ -105,7 +105,6 @@
     ~/.config/autostart: 
       path: system/autostart
       force: true
-
     ~/.gitconfig: 
       path: system/git/gitconfig
       force: true
@@ -172,14 +171,14 @@
       path: system/electron-flags.conf
       force: true
 
-- shell:
+# - shell:
     # - systemctl --user enable ssh-agent
     # - systemctl --user daemon-reload
     # - rm -f ~/.ssh/id_ed25519 
     # - gpg -d system/ssh/keys/id_ed25519.gpg > ~/.ssh/id_ed25519
     # - chmod 400 ~/.ssh/id_ed25519
-    - cd ~/.themes/whitesur-gtk-theme && sh install.sh -c Dark -c Light -t all
-    - cd ~/.themes/whitesur-icon-theme && sh install.sh
-    - cd ~/.themes/whitesur-cursors && sh install.sh
-    - cd ~/.themes/whitesur-kde && sh install.sh
-#    - hyprctl reload
+    # - cd ~/.themes/whitesur-gtk-theme && sh install.sh -c Dark -c Light -t all
+    # - cd ~/.themes/whitesur-icon-theme && sh install.sh
+    # - cd ~/.themes/whitesur-cursors && sh install.sh
+    # - cd ~/.themes/whitesur-kde && sh install.sh
+    # - hyprctl reload
