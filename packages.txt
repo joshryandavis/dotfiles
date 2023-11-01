@@ -32,7 +32,6 @@ docker
 docker-buildx
 docker-compose
 dolphin
-dunst
 efibootmgr
 electron
 endeavour
@@ -204,6 +203,7 @@ swappy
 swaybg
 swayidle
 swaylock-effects
+swaync
 swell-foop
 swww
 tali

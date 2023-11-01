@@ -45,12 +45,12 @@ nm-applet --indicator &
 blueman-applet &
 wayvnc &
 swaync &
-
 firefox &
 thunderbird &
 bitwarden-desktop &
 teams-for-linux &
 cider &
 
-sleep 2
+sleep 1
+
 notify-send -t 1000 "Hyprland started"

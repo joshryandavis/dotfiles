@@ -33,6 +33,9 @@
     ~/.config/foot: 
       path: apps/foot
       force: true
+    ~/.config/nushell:
+      path: system/nushell
+      force: true
     ~/.config/alacritty: 
       path: apps/alacritty
       force: true
@@ -57,9 +60,9 @@
     ~/.config/nvim: 
       path: apps/nvim
       force: true
-    # ~/.config/nwg-look: 
-    #   path: theme/nwg-look
-    #   force: true
+    ~/.config/nwg-look: 
+      path: theme/nwg-look
+      force: true
     ~/.config/qt5ct: 
       path: theme/qt5ct
       force: true
