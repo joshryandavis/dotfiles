@@ -2,6 +2,7 @@ accerciser
 alacritty
 amd-ucode
 apple-fonts
+autoenv-git
 baobab
 base
 base-devel
@@ -39,6 +40,7 @@ eog
 epiphany
 evince
 evolution
+extramaus
 ffmpegthumbs
 file-roller
 firefox
@@ -127,6 +129,7 @@ iwd
 jq
 kitty
 krita
+kvantum-git
 less
 libpulse
 libreoffice-fresh
@@ -266,10 +269,10 @@ update-grub
 viewnior
 vim
 virt-manager
+visual-studio-code-bin
 vkd3d
 vlc
 vscodium
-vscodium-features
 vscodium-marketplace
 waybar
 wayvnc
