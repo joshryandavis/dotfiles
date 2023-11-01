@@ -54,7 +54,6 @@ sudo systemctl enable gpm.service
 sudo systemctl enable systemd-homed-activate.service
 sudo systemctl enable systemd-homed.service
 sudo systemctl enable avahi-daemon.service
-sudo systemctl enable acahi-dsconfd.service
 sudo systemctl enable sshd.service
 sudo systemctl enable cockpit.socket
 sudo systemctl enable docker.service

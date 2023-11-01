@@ -13,6 +13,7 @@ brightnessctl
 btop
 cava
 cheese
+cider
 cliphist
 cockpit
 cockpit-packagekit
@@ -267,6 +268,9 @@ vim
 virt-manager
 vkd3d
 vlc
+vscodium
+vscodium-features
+vscodium-marketplace
 waybar
 wayvnc
 wget
