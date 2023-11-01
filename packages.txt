@@ -1,6 +1,7 @@
 accerciser
 alacritty
 amd-ucode
+apple-fonts
 baobab
 base
 base-devel
@@ -202,6 +203,7 @@ swaylock-effects
 swell-foop
 swww
 tali
+teams-for-linux-git
 thunar
 thunar-archive-plugin
 thunar-volman
@@ -242,6 +244,7 @@ ttf-monofur-nerd
 ttf-monoid-nerd
 ttf-mononoki-nerd
 ttf-mplus-nerd
+ttf-ms-fonts
 ttf-nerd-fonts-symbols
 ttf-nerd-fonts-symbols-mono
 ttf-noto-nerd
@@ -258,6 +261,7 @@ ttf-ubuntu-nerd
 ttf-victor-mono-nerd
 tumbler
 udiskie
+update-grub
 viewnior
 vim
 virt-manager
