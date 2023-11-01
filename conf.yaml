@@ -173,6 +173,12 @@
     ~/.config/electron27-flags.conf: 
       path: system/electron-flags.conf
       force: true
+    ~/.thunderbird/profiles.ini:
+      path: apps/thunderbird/profiles.ini
+      force: true
+    ~/.thunderbird/installs.ini:
+      path: apps/thunderbird/installs.ini
+      force: true
 
 # - shell:
     # - systemctl --user enable ssh-agent

@@ -13,6 +13,7 @@ killall -9 wayvnc
 killall -9 bitwarden
 killall -9 thunderbird
 killall -9 teams-for-linux
+killall -9 birdtray
 killall -9 electron
 killall -9 waybar
 killall -9 firefox
@@ -49,6 +50,7 @@ firefox &
 thunderbird &
 bitwarden-desktop &
 teams-for-linux &
+birdtray &
 cider &
 
 sleep 1
