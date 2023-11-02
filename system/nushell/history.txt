@@ -1,2 +1,4 @@
 help
 ssh
+docker
+#!/bin/bash<\n>

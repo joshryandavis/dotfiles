@@ -158,6 +158,9 @@
     ~/.config/codium-flags.conf: 
       path: system/electron-flags.conf
       force: true
+    ~/.config/chromium-flags.conf: 
+      path: system/electron-flags.conf
+      force: true
     ~/.config/vscodium-flags.conf: 
       path: system/electron-flags.conf
       force: true
@@ -178,6 +181,9 @@
       force: true
     ~/.thunderbird/installs.ini:
       path: apps/thunderbird/installs.ini
+      force: true
+    ~/.nvidia-settings-rc:
+      path: system/nvidia-settings-rc
       force: true
 
 # - shell:
