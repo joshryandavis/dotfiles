@@ -188,6 +188,12 @@
     ~/.nvidia-settings-rc:
       path: system/nvidia-settings-rc
       force: true
+    ~/.config/waybar:
+      path: apps/waybar
+      force: true
+    ~/.config/wofi:
+      path: apps/wofi
+      force: true
 
 # - shell:
     # - systemctl --user enable ssh-agent

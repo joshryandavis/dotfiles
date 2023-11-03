@@ -17,6 +17,7 @@ killall -9 birdtray
 killall -9 electron
 killall -9 waybar
 killall -9 cider
+killall -9 webcord
 
 # wait for waybar to exit
 until ! pgrep -f 'waybar'; do sleep 1; done
@@ -33,7 +34,7 @@ until pgrep -f 'xdg-desktop-portal-hyprland'; do sleep 1; done
 
 until pgrep -f 'polkit-kde-authentication-agent-1'; do sleep 1; done
 
-waybar --config ~/.config/hypr/waybar/config --style ~/.config/hypr/waybar/style.css &
+waybar &
 
 until pgrep -f 'waybar'; do sleep 1; done
 
@@ -50,6 +51,6 @@ bitwarden-desktop &
 teams-for-linux &
 birdtray &
 cider &
-sleep 1
+webcord &
 
 notify-send -t 1000 "Hyprland started"
