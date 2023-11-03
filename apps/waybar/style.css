@@ -24,12 +24,10 @@ window#waybar.hidden {
 
 
 #tray {
-    /* background-color: #2980b9; */
-    margin-left: -10px;
+    /* margin-left: -10px; */
 }
 
-#tray * {
-    padding-left: 10px;
+#tray icon {
 }
 
 #tray .active {
@@ -46,12 +44,9 @@ window#waybar.hidden {
 
 #tray .needs-attention {
     -gtk-icon-effect: highlight;
-    /* background-color: #eb4d4b; */
 }
 
 #tray .needs-attention:hover {
-    -gtk-icon-effect: highlight;
-    /* background-color: #eb4d4b; */
 }
 
 /*

@@ -111,7 +111,7 @@
     },
     "tray": {
         // "icon-size": 21,
-        // "spacing": 10
+        "spacing": 10
     },
     "clock#date": {
         // "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
