@@ -165,6 +165,9 @@ lutris
 ly
 malcontent
 mdp
+microsoft-edge-beta-bin
+microsoft-edge-dev-bin
+microsoft-edge-stable-bin
 mkinitcpio-bluetooth
 mousepad
 mpv
@@ -313,6 +316,7 @@ xdg-desktop-portal-hyprland
 xdg-user-dirs
 xdg-user-dirs-gtk
 xdg-utils
+xdotool
 xorg-xeyes
 xterm
 yay-bin

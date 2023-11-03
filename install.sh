@@ -46,22 +46,22 @@ fi
 yay -Qqe > packages.txt
 
 # Ensure services are enabled
-sudo systemctl enable NetworkManager.service
-sudo systemctl enable bluetooth.service
-sudo systemctl enable bluetooth-mesh.service
-sudo systemctl enable blueman-mechanism.service
-sudo systemctl enable gpm.service
-sudo systemctl enable systemd-homed-activate.service
-sudo systemctl enable systemd-homed.service
-sudo systemctl enable avahi-daemon.service
-sudo systemctl enable sshd.service
-sudo systemctl enable cockpit.socket
-sudo systemctl enable docker.service
-sudo systemctl enable upower.service
-sudo systemctl enable nvidia-persistenced.service
-sudo systemctl enable nvidia-suspend.service
-sudo systemctl enable nvidia-resume.service
-sudo systemctl enable nvidia-hibernate.service
+# sudo systemctl enable NetworkManager.service
+# sudo systemctl enable bluetooth.service
+# sudo systemctl enable bluetooth-mesh.service
+# sudo systemctl enable blueman-mechanism.service
+# sudo systemctl enable gpm.service
+# sudo systemctl enable systemd-homed-activate.service
+# sudo systemctl enable systemd-homed.service
+# sudo systemctl enable avahi-daemon.service
+# sudo systemctl enable sshd.service
+# sudo systemctl enable cockpit.socket
+# sudo systemctl enable docker.service
+# sudo systemctl enable upower.service
+# sudo systemctl enable nvidia-persistenced.service
+# sudo systemctl enable nvidia-suspend.service
+# sudo systemctl enable nvidia-resume.service
+# sudo systemctl enable nvidia-hibernate.service
 
 # Update mkinitcpio and grub
 sudo mkinitcpio -P

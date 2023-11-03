@@ -16,7 +16,6 @@ killall -9 teams-for-linux
 killall -9 birdtray
 killall -9 electron
 killall -9 waybar
-killall -9 firefox
 killall -9 cider
 
 # wait for waybar to exit
@@ -46,13 +45,11 @@ nm-applet --indicator &
 blueman-applet &
 wayvnc &
 swaync &
-firefox &
 thunderbird &
 bitwarden-desktop &
 teams-for-linux &
 birdtray &
 cider &
-
 sleep 1
 
 notify-send -t 1000 "Hyprland started"

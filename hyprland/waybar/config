@@ -31,26 +31,6 @@
         "battery",
         "battery#bat2",
     ],
-    // Modules configuration
-    // "hyprland/workspaces": {
-    //     "disable-scroll": true,
-    //     "all-outputs": true,
-    //     "warp-on-scroll": false,
-    //     "format": "{icon}",
-    //     "persistent_workspaces": falsnce,
-    //     "format-icons": {
-    //         // "1": ["􀀺","1"],
-    //         // "2": "􀀼",
-    //         // "3": "􀀾",
-    //         // "4": "􀁀",
-    //         // "5": "􀁃",
-    //         "urgent": "",
-    //         "focused": "􀀁",
-    //         "default": "􀀀",
-    //         "persistent": "􀀀",
-    //         "visible": "􀀀"
-    //     }
-    // },
     "hyprland/workspaces": {
         "format": "{icon}",
         // "disable-scroll": false,
