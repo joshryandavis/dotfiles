@@ -183,10 +183,10 @@
       path: system/nvidia-settings-rc
       force: true
     ~/.config/waybar:
-      path: apps/waybar
+      path: system/waybar
       force: true
     ~/.config/wofi:
-      path: apps/wofi
+      path: system/wofi
       force: true
 
 # - shell:

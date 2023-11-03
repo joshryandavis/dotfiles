@@ -82,3 +82,5 @@ alias vim="nvim"
 alias vi="nvim"
 
 RUSTC_WRAPPER=sccache
+
+alias pip="pip3"
