@@ -10,9 +10,9 @@ killall -9 nm-applet
 killall -9 blueman-applet
 killall -9 polkit-kde-authentication-agent-1
 killall -9 wayvnc
-killall -9 bitwarden
+# killall -9 bitwarden
 killall -9 thunderbird
-killall -9 teams-for-linux
+# killall -9 teams-for-linux
 killall -9 birdtray
 killall -9 electron
 killall -9 waybar
@@ -47,8 +47,8 @@ blueman-applet &
 wayvnc &
 swaync &
 thunderbird &
-bitwarden-desktop &
-teams-for-linux &
+# bitwarden-desktop &
+# teams-for-linux &
 birdtray &
 cider &
 webcord &
