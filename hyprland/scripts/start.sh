@@ -4,7 +4,7 @@ killall -9 xdg-desktop-portal-hyprland
 killall -9 xdg-desktop-portal-wlr
 killall -9 xdg-desktop-portal
 killall -9 swaync
-killall -9 copyq
+# killall -9 copyq
 killall -9 udiskie
 killall -9 nm-applet
 killall -9 blueman-applet
@@ -40,7 +40,7 @@ until pgrep -f 'waybar'; do sleep 1; done
 
 sleep 2
 
-copyq --start-server &
+# copyq --start-server &
 udiskie --appindicator &
 nm-applet --indicator &
 blueman-applet &
@@ -50,7 +50,7 @@ thunderbird &
 # bitwarden-desktop &
 # teams-for-linux &
 birdtray &
-cider &
+AppImageLauncher ~/Applications/Cider* &
 webcord &
 
 notify-send -t 1000 "Hyprland started"

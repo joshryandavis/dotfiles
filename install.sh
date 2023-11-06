@@ -29,21 +29,21 @@ if [ ! -d ~/.oh-my-zsh ]; then
 fi
 
 # Update the system
-sudo pacman -Syu --noconfirm
+# sudo pacman -Syu --noconfirm
 
 # Check if the file exists
-if [ -f "packages.txt" ]; then
-  # Read the package names from the file and install them
-  while read -r package; do
-    yay -S --noconfirm --needed "$package"
-  done < packages.txt
-  echo "All user-installed packages have been installed."
-else
-  echo "The file 'packages.txt' does not exist."
-fi
+# if [ -f "packages.txt" ]; then
+#   # Read the package names from the file and install them
+#   while read -r package; do
+#     yay -S --noconfirm --needed "$package"
+#   done < packages.txt
+#   echo "All user-installed packages have been installed."
+# else
+#   echo "The file 'packages.txt' does not exist."
+# fi
 
 # Update the package list
-yay -Qqe > packages.txt
+# yay -Qqe > packages.txt
 
 # Ensure services are enabled
 # sudo systemctl enable NetworkManager.service
@@ -64,8 +64,8 @@ yay -Qqe > packages.txt
 # sudo systemctl enable nvidia-hibernate.service
 
 # Update mkinitcpio and grub
-sudo mkinitcpio -P
-sudo update-grub
+# sudo mkinitcpio -P
+# sudo update-grub
 
 # Update dotfiles repo
 git add . || true

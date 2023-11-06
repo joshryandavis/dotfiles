@@ -153,10 +153,12 @@
       path: system/electron-flags.conf
       force: true
     ~/.config/chromium-flags.conf: 
-      path: system/electron-flags.conf
+      path: system/chromium-flags.conf
       force: true
+    ~/.config/chrome-flags.conf: 
+      path: system/chromium-flags.conf
     ~/.config/edge-flags.conf: 
-      path: system/electron-flags.conf
+      path: system/chromium-flags.conf
       force: true
     ~/.config/vscodium-flags.conf: 
       path: system/electron-flags.conf

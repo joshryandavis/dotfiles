@@ -12,25 +12,42 @@
         "hyprland/window"
     ],
     "modules-right": [
-        "hyprland/mode",
-        "hyprland/scratchpad",
-        "custom/media",
-        "mpd",
+        // "hyprland/mode",
+        // "hyprland/scratchpad",
+        // "custom/media",
+        // "mpd",
+        "gamemode",
         "idle_inhibitor",
         "cpu",
         "memory",
         "pulseaudio",
         "pulseaudio#source",
+        // "pulseaudio/slider",
         "temperature",
         "backlight",
-        "keyboard-state",
+        // "keyboard-state",
         "tray",
         "custom/notification",
         "clock#date",
-        "clock#time",
-        "battery",
-        "battery#bat2",
+        "clock#time"
     ],
+    "gamemode": {
+        "format": "{glyph}",
+        "format-alt": "{glyph} {count}",
+        "glyph": "",
+        "hide-not-running": true,
+        "use-icon": true,
+        "icon-name": "input-gaming-symbolic",
+        "icon-spacing": 4,
+        "icon-size": 20,
+        "tooltip": true,
+        "tooltip-format": "Games running: {count}"
+    },
+    "pulseaudio/slider": {
+        "min": 0,
+        "max": 100,
+        "orientation": "horizontal"
+    },
     "hyprland/workspaces": {
         "format": "{icon}",
         // "disable-scroll": false,
@@ -75,29 +92,26 @@
         "tooltip-format": "{app}: {title}"
     },
     "mpd": {
-        // "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
-        "format": "{stateIcon}{consumeIcon}{randomIcon}{repeatIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
-        "format-disconnected": "",
-        // "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}􀜫",
-        "format-stopped": "",
-        "unknown-tag": "N/A",
-        "interval": 1,
+        "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ",
+        "format-disconnected": "Disconnected ",
+        "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
+        "interval": 10,
         "consume-icons": {
-            "on": " "
+            "on": " " // Icon shows only when "consume" is on
         },
         "random-icons": {
-            // "off": "",
-            "on": "􀵉 "
+            "off": "<span color=\"#f53c3c\"></span> ", // Icon grayed out when "random" is off
+            "on": " "
         },
         "repeat-icons": {
-            "on": "􀵌 "
+            "on": " "
         },
         "single-icons": {
-            // "on": "1 "
+            "on": "1 "
         },
         "state-icons": {
-            "paused": "􀊜",
-            "playing": "􀊚"
+            "paused": "",
+            "playing": ""
         },
         "tooltip-format": "MPD (connected)",
         "tooltip-format-disconnected": "MPD (disconnected)"

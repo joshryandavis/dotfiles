@@ -1,16 +1,3 @@
 [user]
 	email = 114495200+joshryandavis@users.noreply.github.com
 	name = Joshua Davis
-[status]
-	submoduleSummary = true
-[filter "lfs"]
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-[credential]
-	credentialStore = secretservice
-	helper = 
-	helper = /sbin/git-credential-manager
-[credential "https://dev.azure.com"]
-	useHttpPath = true
