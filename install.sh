@@ -2,19 +2,21 @@
 
 # set -e # exit immediately if a command exits with a non-zero status
 
+yay -S --noconfirm --needed dotbot
+
 CONFIG="conf.yaml"
-DOTBOT_DIR="_dotbot"
-DOTBOT_BIN="bin/dotbot"
+# DOTBOT_DIR="_dotbot"
+# DOTBOT_BIN="bin/dotbot"
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 cd "${BASEDIR}"
 
 # Update submodule
-git submodule sync --recursive
-git submodule update --recursive
+# git submodule sync --recursive
+# git submodule update --recursive
 
 # Install dotfiles
-"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}" || {
+dotbot -d "${BASEDIR}" -c "${CONFIG}" "${@}" || {
   echo "Error: Dotbot installation failed!"
   exit 1
 }

@@ -49,9 +49,12 @@ HIST_STAMPS="dd/mm/yyyy"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM="~/.oh-my-zsh/custom"
 # Which plugins would you like to load?
-plugins=(ssh-agent zsh-autosuggestions zsh-syntax-highlighting zsh-navigation-tools zsh-interactive-cd virtualenv tmux systemd bun bazel branch git archlinux sudo command-not-found common-aliases dotnet git-auto-fetch rust docker docker-compose docker-machine emoji dotenv extract flutter fzf gh cp command-not-found copypath git-extras aliases autoenv direnv vscode zoxide)
+plugins=(ssh-agent zsh-navigation-tools zsh-interactive-cd virtualenv tmux systemd bun bazel branch git archlinux sudo command-not-found common-aliases dotnet git-auto-fetch rust docker docker-compose docker-machine emoji dotenv extract flutter fzf gh cp command-not-found copypath git-extras aliases autoenv direnv vscode zoxide)
 
 source $ZSH/oh-my-zsh.sh
+
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # User configuration
 
