@@ -10,8 +10,13 @@ if ! command -v yay &> /dev/null; then
   cd ~ && pacman -S --noconfirm --needed git base-devel && git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si
 fi
 
+# Install zsh if not installed
+if ! command -v zsh &> /dev/null; then
+  yay -S --noconfirm --needed zsh
+fi
+
 yay -S --noconfirm --needed dotbot
-yay -S --noconfirm --needed zsh oh-my-zsh-git oh-my-zsh-autosuggestions-git oh-my-syntax-highlighting-git
+yay -S --noconfirm --needed oh-my-zsh-git oh-my-zsh-autosuggestions-git oh-my-syntax-highlighting-git
 yay -S --noconfirm --needed whitesur-cursor-theme-git whitesur-gtk-theme-git whitesur-icon-theme-git
 
 cd ~ && git clone https://github.com/vinceliuice/WhiteSur-kde && cd WhiteSur-kde && ./install.sh || {
