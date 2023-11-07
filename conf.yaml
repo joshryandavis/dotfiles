@@ -43,7 +43,7 @@
       path: theme/gtk3
       force: true
     ~/.config/hypr: 
-      path: hyprland
+      path: system/hyprland
       force: true
     ~/.config/Kvantum: 
       path: theme/kvantum
@@ -85,7 +85,7 @@
       path: system/misc/user-dirs.locale
       force: true
     ~/.config/xsettingsd.conf: 
-      path: theme/xsettingsd.conf
+      path: theme/x11/xsettingsd.conf
       force: true
     ~/.config/systemd/user: 
       path: system/systemd
@@ -132,7 +132,7 @@
       path: system/tmux/tmux.conf
       force: true
     ~/.Xresources: 
-      path: theme/Xresources
+      path: theme/x11/Xresources
       force: true
     ~/.zshrc: 
       path: system/zsh/zshrc
@@ -156,7 +156,7 @@
       path: system/thunderbird/installs.ini
       force: true
     ~/.nvidia-settings-rc:
-      path: system/nvidia-settings-rc
+      path: system/nvidia/nvidia-settings-rc
       force: true
     ~/.config/waybar:
       path: system/waybar
@@ -167,36 +167,36 @@
     
     # electron flag nonsense
     ~/.config/electron-flags.conf: 
-      path: system/electron-flags.conf
+      path: system/electron/electron-flags.conf
       force: true
     ~/.config/code-flags.conf: 
-      path: system/electron-flags.conf
+      path: system/electron/electron-flags.conf
       force: true
     ~/.config/codium-flags.conf: 
-      path: system/electron-flags.conf
+      path: system/electron/electron-flags.conf
       force: true
     ~/.config/chromium-flags.conf: 
-      path: system/chromium-flags.conf
+      path: system/electron/chromium-flags.conf
       force: true
     ~/.config/chrome-flags.conf: 
-      path: system/chromium-flags.conf
+      path: system/electron/chromium-flags.conf
     ~/.config/edge-flags.conf: 
-      path: system/chromium-flags.conf
+      path: system/electron/chromium-flags.conf
       force: true
     ~/.config/vscodium-flags.conf: 
-      path: system/electron-flags.conf
+      path: system/electron/electron-flags.conf
       force: true
     ~/.config/electron24-flags.conf: 
-      path: system/electron-flags.conf
+      path: system/electron/electron-flags.conf
       force: true
     ~/.config/electron25-flags.conf: 
-      path: system/electron-flags.conf
+      path: system/electron/electron-flags.conf
       force: true
     ~/.config/electron26-flags.conf: 
-      path: system/electron-flags.conf
+      path: system/electron/electron-flags.conf
       force: true
     ~/.config/electron27-flags.conf: 
-      path: system/electron-flags.conf
+      path: system/electron/electron-flags.conf
       force: true
 
 # - shell:
