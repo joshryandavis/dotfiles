@@ -4,15 +4,15 @@ killall -9 xdg-desktop-portal-hyprland
 killall -9 xdg-desktop-portal-wlr
 killall -9 xdg-desktop-portal
 killall -9 swaync
-# killall -9 copyq
+killall -9 copyq
 killall -9 udiskie
 killall -9 nm-applet
 killall -9 blueman-applet
 killall -9 polkit-kde-authentication-agent-1
 killall -9 wayvnc
-# killall -9 bitwarden
+killall -9 bitwarden
 killall -9 thunderbird
-# killall -9 teams-for-linux
+killall -9 teams-for-linux
 killall -9 birdtray
 killall -9 electron
 killall -9 waybar
@@ -40,15 +40,15 @@ until pgrep -f 'waybar'; do sleep 1; done
 
 sleep 2
 
-# copyq --start-server &
+copyq --start-server &
 udiskie --appindicator &
 nm-applet --indicator &
 blueman-applet &
 wayvnc &
 swaync &
 thunderbird &
-# bitwarden-desktop &
-# teams-for-linux &
+bitwarden-desktop &
+teams-for-linux &
 birdtray &
 AppImageLauncher ~/Applications/Cider* &
 webcord &
