@@ -52,10 +52,10 @@
       path: theme/latte
       force: true
     ~/.config/swaync:
-      path: system/swaync
+      path: system/hyprland/swaync
       force: true
     ~/.config/mimeapps.list: 
-      path: system/misc/mimeapps.list
+      path: system/xdg/mimeapps.list
       force: true
     ~/.config/nvim: 
       path: system/nvim
@@ -76,13 +76,13 @@
       path: system/thunar
       force: true
     ~/.config/xdg-terminals.list: 
-      path: system/misc/xdg-terminals.list
+      path: system/xdg/xdg-terminals.list
       force: true
     ~/.config/user-dirs.dirs: 
-      path: system/misc/user-dirs.dirs
+      path: system/xdg/user-dirs.dirs
       force: true
     ~/.config/user-dirs.locale: 
-      path: system/misc/user-dirs.locale
+      path: system/xdg/user-dirs.locale
       force: true
     ~/.config/xsettingsd.conf: 
       path: theme/x11/xsettingsd.conf
@@ -159,10 +159,10 @@
       path: system/nvidia/nvidia-settings-rc
       force: true
     ~/.config/waybar:
-      path: system/waybar
+      path: system/hyprland/waybar
       force: true
     ~/.config/wofi:
-      path: system/wofi
+      path: system/hyprland/wofi
       force: true
     
     # electron flag nonsense
