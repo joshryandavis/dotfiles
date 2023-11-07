@@ -1,3 +1,3 @@
-# dotfiles
+# jd's dotfiles
 
-hyprland on arch linuxhyprland on arch linux
+`pacman -S --noconfirm --needed git && git clone git@github.com:joshryandavis/dotfiles.git && cd dotfiles && sh install.sh`

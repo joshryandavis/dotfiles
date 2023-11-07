@@ -57,6 +57,11 @@ sudo systemctl enable nvidia-suspend.service
 sudo systemctl enable nvidia-resume.service
 sudo systemctl enable nvidia-hibernate.service
 
+# systemctl --user enable ssh-agent
+# sudo systemctl --user daemon-reload
+
+hyprctl reload
+
 # Update mkinitcpio and grub
 sudo mkinitcpio -P
 sudo update-grub
