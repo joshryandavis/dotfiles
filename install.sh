@@ -3,32 +3,19 @@
 # set -e # exit immediately if a command exits with a non-zero status
 
 yay -S --noconfirm --needed dotbot
+yay -S --noconfirm --needed zsh
+yay -S --noconfirm --needed oh-my-zsh-git
 
 CONFIG="conf.yaml"
-# DOTBOT_DIR="_dotbot"
-# DOTBOT_BIN="bin/dotbot"
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 cd "${BASEDIR}"
-
-# Update submodule
-# git submodule sync --recursive
-# git submodule update --recursive
 
 # Install dotfiles
 dotbot -d "${BASEDIR}" -c "${CONFIG}" "${@}" || {
   echo "Error: Dotbot installation failed!"
   exit 1
 }
-
-# if ~/.oh-my-zsh/custom/plugins exists and isn't a link, delete it
-if [ -d ~/.oh-my-zsh/custom/plugins ] && [ ! -L ~/.oh-my-zsh/custom/plugins ]; then
-  rm -rf ~/.oh-my-zsh/custom/plugins
-fi
-# if oh-my-zsh is not installed, install it
-if [ ! -d ~/.oh-my-zsh ]; then
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-fi
 
 # Update the system
 # sudo pacman -Syu --noconfirm
