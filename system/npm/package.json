@@ -1,7 +1,14 @@
-{ 
-  "name": "jd", "module": "index.ts", "type": "module", "devDependencies": {
+{
+  "name": "jd",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
     "bun-types": "latest"
-  }, "peerDependencies": {
+  },
+  "peerDependencies": {
     "typescript": "^5.0.0"
-  } 
+  },
+  "dependencies": {
+    "@microsoft/inshellisense": "^0.0.1-rc.1"
+  }
 }

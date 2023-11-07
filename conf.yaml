@@ -143,9 +143,29 @@
     ~/tsconfig.json: 
       path: system/npm/tsconfig.json
       force: true
+    ~/.editorconfig: 
+      path: system/editorconfig/editorconfig
+      force: true
     ~/.oh-my-zsh/custom/plugins: 
       path: system/dependencies/zsh
       force: true
+    ~/.thunderbird/profiles.ini:
+      path: apps/thunderbird/profiles.ini
+      force: true
+    ~/.thunderbird/installs.ini:
+      path: apps/thunderbird/installs.ini
+      force: true
+    ~/.nvidia-settings-rc:
+      path: system/nvidia-settings-rc
+      force: true
+    ~/.config/waybar:
+      path: system/waybar
+      force: true
+    ~/.config/wofi:
+      path: system/wofi
+      force: true
+    
+    # electron flag nonsense
     ~/.config/electron-flags.conf: 
       path: system/electron-flags.conf
       force: true
@@ -177,21 +197,6 @@
       force: true
     ~/.config/electron27-flags.conf: 
       path: system/electron-flags.conf
-      force: true
-    ~/.thunderbird/profiles.ini:
-      path: apps/thunderbird/profiles.ini
-      force: true
-    ~/.thunderbird/installs.ini:
-      path: apps/thunderbird/installs.ini
-      force: true
-    ~/.nvidia-settings-rc:
-      path: system/nvidia-settings-rc
-      force: true
-    ~/.config/waybar:
-      path: system/waybar
-      force: true
-    ~/.config/wofi:
-      path: system/wofi
       force: true
 
 # - shell:
