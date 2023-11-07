@@ -42,8 +42,20 @@
     ~/.config/gtk-3.0: 
       path: system/gtk3
       force: true
+    ~/.config/gtk-4.0:
+      path: system/gtk4
+      force: true
     ~/.config/hypr: 
       path: system/hyprland
+      force: true
+    ~/.config/gtklock: 
+      path: system/gtklock
+      force: true
+    ~/.config/guvcview2: 
+      path: system/guvcview/guvcview2
+      force: true
+    ~/default.gpfl: 
+      path: system/guvcview/default.gpfl
       force: true
     ~/.config/Kvantum: 
       path: system/kvantum
@@ -62,6 +74,9 @@
       force: true
     ~/.config/nwg-look: 
       path: system/nwg-look
+      force: true
+    ~/.config/nwg-displays: 
+      path: system/nwg-displays
       force: true
     ~/.config/qt5ct: 
       path: system/qt5ct
