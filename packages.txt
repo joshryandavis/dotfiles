@@ -52,6 +52,7 @@ docker-compose
 docker-desktop
 docker-rootless-extras
 dolphin
+dos2unix
 dotbot
 efibootmgr
 electron
@@ -129,6 +130,7 @@ gnome-weather
 google-chrome
 gopsuinfo
 grim
+grimblast-git
 grub
 gst-plugin-pipewire
 gtkcord4
@@ -153,6 +155,7 @@ hwdetect
 hwinfo
 hypr-git
 hyprland-nvidia-git
+hyprpicker
 i3-wm
 i3blocks
 i3lock
@@ -174,7 +177,6 @@ lightsoff
 linux
 linux-firmware
 linux-headers
-linux-lts
 linux-lts-headers
 loupe
 lutris
@@ -254,6 +256,7 @@ quadrapassel
 rofi-rbw
 rygel
 sassc
+scdoc
 screen
 seahorse
 simple-scan
@@ -356,13 +359,14 @@ wluma
 wofi
 wtype
 xdg-desktop-portal-gnome
-xdg-desktop-portal-hyprland
+xdg-desktop-portal-hyprland-git
 xdg-user-dirs
 xdg-user-dirs-gtk
 xdg-utils
 xdotool
 xorg-xeyes
 xterm
+xwaylandvideobridge-bin
 yay-bin
 zoxide
 zram-generator

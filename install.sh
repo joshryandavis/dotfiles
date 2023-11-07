@@ -24,6 +24,41 @@ cd ~ && git clone https://github.com/vinceliuice/WhiteSur-kde && cd WhiteSur-kde
   # exit 1
 }
 
+cd ~ && git clone https://github.com/hyprwm/contrib && cd contrib || {
+  echo "Error: contrib installation failed!"
+  # exit 1
+}
+
+cd hyprprop && sudo make install || {
+  echo "Error: hyprprop installation failed!"
+  # exit 1
+}
+
+cd grimblast && sudo make install || {
+  echo "Error: grimblast installation failed!"
+  # exit 1
+}
+
+cd hdrop && sudo make install || {
+  echo "Error: hdrop installation failed!"
+  # exit 1
+}
+
+cd scratchpad && sudo make install || {
+  echo "Error: scratchpad installation failed!"
+  # exit 1
+}
+
+cd shellevents && sudo make install || {
+  echo "Error: shellevents installation failed!"
+  # exit 1
+}
+
+cd try_swap_workspace && sudo make install || {
+  echo "Error: try_swap_workspace installation failed!"
+  # exit 1
+}
+
 cd "${BASEDIR}"
 
 # Install dotfiles
@@ -37,7 +72,7 @@ cd ~/.local/bin && chmod u+r+x * && cd ~
 cd "${BASEDIR}"
 
 # Update the system
-# sudo pacman -Syu --noconfirm
+sudo pacman -Syu --noconfirm
 
 # Check if the file exists
 # if [ -f "packages.txt" ]; then
@@ -51,7 +86,7 @@ cd "${BASEDIR}"
 # fi
 
 # Update the package list
-# yay -Qqe > packages.txt
+yay -Qqe > packages.txt
 
 # Ensure services are enabled
 # sudo systemctl enable NetworkManager.service
@@ -77,8 +112,8 @@ sudo systemctl enable nvidia-hibernate.service
 hyprctl reload
 
 # Update mkinitcpio and grub
-# sudo mkinitcpio -P
-# sudo update-grub
+sudo update-grub
+sudo mkinitcpio --config /etc/mkinitcpio.conf --generate /boot/initramfs-custom.img
 
 # Update dotfiles repo
 git add . || true
