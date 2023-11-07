@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# set -e # exit immediately if a command exits with a non-zero status
+set -e # exit immediately if a command exits with a non-zero status
 
 CONFIG="config.yaml"
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"

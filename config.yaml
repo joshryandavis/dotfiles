@@ -157,6 +157,9 @@
     ~/.config/wofi:
       path: system/hyprland/wofi
       force: true
+    ~/.local/bin/:
+      path: system/bin
+      force: true
     
     # electron flag nonsense
     ~/.config/electron-flags.conf: 
