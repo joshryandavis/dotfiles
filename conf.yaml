@@ -25,19 +25,19 @@
       path: system/bash/bashrc
       force: true
     ~/.config/copyq/copyq.conf: 
-      path: apps/copyq/copyq.conf
+      path: system/copyq/copyq.conf
       force: true
     ~/.config/fontconfig: 
       path: theme/fontconfig
       force: true
     ~/.config/foot: 
-      path: apps/foot
+      path: system/foot
       force: true
     ~/.config/nushell:
       path: system/nushell
       force: true
     ~/.config/alacritty: 
-      path: apps/alacritty
+      path: system/alacritty
       force: true
     ~/.config/gtk-3.0: 
       path: theme/gtk3
@@ -58,7 +58,7 @@
       path: system/misc/mimeapps.list
       force: true
     ~/.config/nvim: 
-      path: apps/nvim
+      path: system/nvim
       force: true
     ~/.config/nwg-look: 
       path: theme/nwg-look
@@ -70,10 +70,10 @@
       path: theme/qt6ct
       force: true
     ~/.config/swappy: 
-      path: apps/swappy
+      path: system/swappy
       force: true
     ~/.config/Thunar: 
-      path: apps/thunar
+      path: system/thunar
       force: true
     ~/.config/xdg-terminals.list: 
       path: system/misc/xdg-terminals.list
@@ -97,13 +97,13 @@
       path: theme/xfce4
       force: true
     ~/.config/Code/User/settings.json: 
-      path: apps/code/settings.json
+      path: system/code/settings.json
       force: true
     ~/.config/Code - OSS/User/settings.json: 
-      path: apps/code/settings.json
+      path: system/code/settings.json
       force: true
     ~/.config/VSCodium/User/settings.json:
-      path: apps/code/settings.json
+      path: system/code/settings.json
       force: true
     ~/.config/autostart: 
       path: system/autostart
@@ -114,13 +114,13 @@
     ~/.gtkrc-2.0: 
       path: theme/gtk2/gtkrc-2.0
     ~/.config/btop:
-      path: apps/btop
+      path: system/btop
       force: true
     ~/.config/neofetch:
       path: system/neofetch
       force: true
     ~/.config/lutris:
-      path: apps/lutris
+      path: system/lutris
       force: true
     ~/.themes: 
       path: theme/dependencies/themes
@@ -150,10 +150,10 @@
       path: system/dependencies/zsh
       force: true
     ~/.thunderbird/profiles.ini:
-      path: apps/thunderbird/profiles.ini
+      path: system/thunderbird/profiles.ini
       force: true
     ~/.thunderbird/installs.ini:
-      path: apps/thunderbird/installs.ini
+      path: system/thunderbird/installs.ini
       force: true
     ~/.nvidia-settings-rc:
       path: system/nvidia-settings-rc
