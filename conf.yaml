@@ -140,6 +140,9 @@
     ~/package.json: 
       path: system/npm/package.json
       force: true
+    ~/tsconfig.json: 
+      path: system/npm/tsconfig.json
+      force: true
     ~/.oh-my-zsh/custom/plugins: 
       path: system/dependencies/zsh
       force: true
