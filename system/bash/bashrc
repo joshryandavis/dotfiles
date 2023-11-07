@@ -10,4 +10,4 @@ alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 source /usr/share/nvm/init-nvm.sh
 
-[ -f ~/.inshellisense/key-bindings.bash ] && source ~/.inshellisense/key-bindings.bash
+# [ -f ~/.inshellisense/key-bindings.bash ] && source ~/.inshellisense/key-bindings.bash

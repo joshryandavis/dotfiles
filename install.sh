@@ -14,6 +14,11 @@ yay -S --noconfirm --needed dotbot
 yay -S --noconfirm --needed zsh oh-my-zsh-git oh-my-zsh-autosuggestions-git oh-my-syntax-highlighting-git
 yay -S --noconfirm --needed whitesur-cursor-theme-git whitesur-gtk-theme-git whitesur-icon-theme-git
 
+cd ~ && git clone https://github.com/vinceliuice/WhiteSur-kde && cd WhiteSur-kde && ./install.sh || {
+  echo "Error: WhiteSur-kde installation failed!"
+  exit 1
+}
+
 cd "${BASEDIR}"
 
 # Install dotfiles
