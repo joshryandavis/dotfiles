@@ -27,6 +27,10 @@ dotbot -d "${BASEDIR}" -c "${CONFIG}" "${@}" || {
   exit 1
 }
 
+cd ~/.local/bin && chmod u+r+x * && cd ~
+
+cd "${BASEDIR}"
+
 # Update the system
 # sudo pacman -Syu --noconfirm
 
@@ -68,8 +72,8 @@ sudo systemctl enable nvidia-hibernate.service
 hyprctl reload
 
 # Update mkinitcpio and grub
-sudo mkinitcpio -P
-sudo update-grub
+# sudo mkinitcpio -P
+# sudo update-grub
 
 # Update dotfiles repo
 git add . || true
