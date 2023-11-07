@@ -142,10 +142,6 @@
       force: true
     ~/.editorconfig: 
       path: system/editorconfig/editorconfig
-      force: true
-    ~/.oh-my-zsh/custom/plugins: 
-      path: system/dependencies/zsh
-      force: true
     ~/.thunderbird/profiles.ini:
       path: system/thunderbird/profiles.ini
       force: true
