@@ -2,15 +2,12 @@
 
 # set -e # exit immediately if a command exits with a non-zero status
 
-CONFIG="conf.yaml"
+CONFIG="config.yaml"
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # Install yay
 if ! command -v yay &> /dev/null; then
-  cd ~
-  pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si
-  cd "${BASEDIR}"
-
+  cd ~ && pacman -S --noconfirm --needed git base-devel && git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si
 fi
 
 yay -S --noconfirm --needed dotbot
