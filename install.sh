@@ -16,7 +16,7 @@ yay -S --noconfirm --needed whitesur-cursor-theme-git whitesur-gtk-theme-git whi
 
 cd ~ && git clone https://github.com/vinceliuice/WhiteSur-kde && cd WhiteSur-kde && ./install.sh || {
   echo "Error: WhiteSur-kde installation failed!"
-  exit 1
+  # exit 1
 }
 
 cd "${BASEDIR}"
