@@ -1,7 +1,7 @@
-{
-    "dependencies": {
-        "sass": "latest",
-        "typescript": "latest",
-        "ts-node": "latest"
-    }
+{ 
+  "name": "jd", "module": "index.ts", "type": "module", "devDependencies": {
+    "bun-types": "latest"
+  }, "peerDependencies": {
+    "typescript": "^5.0.0"
+  } 
 }
