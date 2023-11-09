@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 TIME=300 # seconds
 WALLPAPER_DIRECTORY=$1

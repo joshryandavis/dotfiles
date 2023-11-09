@@ -69,6 +69,9 @@
     ~/.config/mimeapps.list: 
       path: system/xdg/mimeapps.list
       force: true
+    ~/.config/swaync:
+      path: system/swaync
+      force: true
     ~/.config/nvim: 
       path: system/nvim
       force: true

@@ -1,5 +1,6 @@
 accerciser
 alacritty
+alsa-plugins
 amd-ucode
 anaconda
 appimage-appimage
@@ -12,10 +13,12 @@ azure-functions-core-tools-bin
 baobab
 base
 base-devel
+bc
 bemenu
 birdtray
 bitwarden
 bitwarden-cli-bin
+bluebubbles-bin
 blueman
 blueproximity-py3-git
 bluetooth-autoconnect
@@ -40,6 +43,7 @@ cockpit-pcp
 cockpit-podman
 cockpit-storaged
 copyq
+cups
 d-spy
 dconf-editor
 devhelp
@@ -53,6 +57,7 @@ docker-desktop
 docker-rootless-extras
 dolphin
 dos2unix
+dosbox
 dotbot
 efibootmgr
 electron
@@ -164,10 +169,29 @@ iagno
 iptables-nft
 iwd
 jq
+kdialog
 kitty
 krita
 kvantum-git
 less
+lib32-alsa-lib
+lib32-alsa-plugins
+lib32-giflib
+lib32-gnutls
+lib32-gst-plugins-base-libs
+lib32-gtk3
+lib32-libjpeg-turbo
+lib32-libpulse
+lib32-libva
+lib32-libxcomposite
+lib32-libxinerama
+lib32-libxslt
+lib32-mpg123
+lib32-nvidia-utils
+lib32-ocl-icd
+lib32-openal
+lib32-v4l-utils
+lib32-vulkan-icd-loader
 libpulse
 libreoffice-fresh
 libva-nvidia-driver
@@ -179,7 +203,7 @@ linux-firmware
 linux-headers
 linux-lts-headers
 loupe
-lutris
+lutris-git
 ly
 malcontent
 man-db
@@ -200,7 +224,6 @@ nodejs-azurite
 noto-fonts-emoji
 nushell
 nvidia-dkms
-nvidia-prime
 nvidia-settings
 nvidia-utils
 nvm
@@ -220,6 +243,8 @@ nwg-shell-wallpapers
 obs-studio
 oh-my-zsh-plugin-autosuggestions
 oh-my-zsh-plugin-syntax-highlighting
+opencl-headers
+opencl-nvidia
 openssh
 orca
 os-prober
@@ -244,6 +269,7 @@ playerctl
 polari
 polkit-kde-agent
 prospect-mail-beta-bin
+proton-ge-custom
 python-dasbus
 python-pip
 python-pipenv
@@ -263,6 +289,7 @@ simple-scan
 slurp
 smartmontools
 snapshot
+starship
 sushi
 swappy
 swaybg
@@ -282,6 +309,7 @@ tk
 tmux
 tofi
 totem
+transmission-gtk
 ttf-3270-nerd
 ttf-agave-nerd
 ttf-anonymouspro-nerd
@@ -351,6 +379,8 @@ wget
 whitesur-cursor-theme-git
 whitesur-gtk-theme-git
 whitesur-icon-theme-git
+wine-staging
+winetricks
 wireless_tools
 wireplumber
 wlr-randr

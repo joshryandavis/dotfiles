@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 # force kill active window
 active_pid=$(hyprctl activewindow -j | jq -r ".pid")

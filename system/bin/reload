@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/zsh
 
 killall -9 xdg-desktop-portal-hyprland
 killall -9 xdg-desktop-portal-wlr
@@ -16,7 +16,6 @@ killall -9 waybar
 killall -9 cider
 killall -9 webcord
 
-# wait for waybar to exit
 until ! pgrep -f 'waybar'; do sleep 1; done
 
 /usr/lib/xdg-desktop-portal-hyprland &
