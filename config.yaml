@@ -76,6 +76,7 @@
       path: linux/kvantum
       force: true
     ~/.config/latte:
+      if: "[ `uname` != Darwin ]"
       path: linux/latte
       force: true
     ~/.config/swaync:
@@ -147,6 +148,7 @@
       path: code/settings.json
       force: true
     ~/.config/autostart:
+      if: "[ `uname` != Darwin ]"
       path: linux/autostart
       force: true
     ~/.gitconfig:
@@ -186,12 +188,15 @@
     ~/.editorconfig:
       path: editorconfig/editorconfig
     ~/.thunderbird/profiles.ini:
+      if: "[ `uname` != Darwin ]"
       path: linux/thunderbird/profiles.ini
       force: true
     ~/.thunderbird/installs.ini:
+      if: "[ `uname` != Darwin ]"
       path: linux/thunderbird/installs.ini
       force: true
     ~/.nvidia-settings-rc:
+      if: "[ `uname` != Darwin ]"
       path: linux/nvidia/nvidia-settings-rc
       force: true
     ~/.config/waybar:
@@ -202,7 +207,7 @@
       if: "[ `uname` != Darwin ]"
       path: linux/hyprland/wofi
       force: true
-    ~/.local/bin/:
+    ~/.local/bin:
       if: "[ `uname` != Darwin ]"
       path: linux/bin
       force: true
