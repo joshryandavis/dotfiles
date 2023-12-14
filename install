@@ -24,6 +24,7 @@ else
   brew install zsh-autosuggestions zsh-syntax-highlighting
 fi
 
+# mkdir ~/.local/share/icons/WhiteSur-cursors
 # cd ~ && git clone https://github.com/vinceliuice/WhiteSur-kde && cd WhiteSur-kde && ./install.sh || {
 #   echo "Error: WhiteSur-kde installation failed!"
 #   # exit 1

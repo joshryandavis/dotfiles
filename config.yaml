@@ -10,26 +10,9 @@
       force: true
       recursive: true
 
-- create:
-    ~/.local/share/icons/WhiteSur-cursors:
-      force: true
-      if: "[ `uname` != Darwin ]"
-
 - link:
-    ~/.config/kitty:
-      path: universal/kitty
-      force: true
-    ~/.config/skhd:
-      path: darwin/skhd
-      force: true
-      if: "[ `uname` = Darwin ]"
-    ~/.config/yabai:
-      if: "[ `uname` = Darwin ]"
-      path: darwin/yabai
-    ~/Brewfile:
-      if: "[ `uname` = Darwin ]"
-      path: darwin/brew/Brewfile
-      force: true
+    # Universal
+
     ~/.config/nvim:
       path: universal/nvim
       force: true
@@ -48,6 +31,55 @@
     ~/.bashrc:
       path: universal/bash/bashrc
       force: true
+    ~/.config/kitty:
+      path: universal/kitty
+      force: true
+    ~/.config/Code/User/settings.json:
+      path: universal/code/settings.json
+      force: true
+    ~/.config/Code - OSS/User/settings.json:
+      path: universal/code/settings.json
+      force: true
+    ~/.config/VSCodium/User/settings.json:
+      path: universal/code/settings.json
+      force: true
+    ~/.gitconfig:
+      path: universal/git/gitconfig
+      force: true
+    ~/.config/btop:
+      path: universal/btop
+      force: true
+    ~/.config/neofetch:
+      path: universal/neofetch
+      force: true
+    ~/.tmux.conf:
+      path: universal/tmux/tmux.conf
+      force: true
+    ~/package.json:
+      path: universal/node/package.json
+      force: true
+    ~/tsconfig.json:
+      path: universal/node/tsconfig.json
+      force: true
+    ~/.editorconfig:
+      path: universal/editorconfig/editorconfig
+
+    # Darwin (macOS)
+
+    ~/.config/skhd:
+      path: darwin/skhd
+      force: true
+      if: "[ `uname` = Darwin ]"
+    ~/.config/yabai:
+      if: "[ `uname` = Darwin ]"
+      path: darwin/yabai
+    ~/Brewfile:
+      if: "[ `uname` = Darwin ]"
+      path: darwin/brew/Brewfile
+      force: true
+
+      # Linux
+
     ~/.config/copyq/copyq.conf:
       if: "[ `uname` != Darwin ]"
       path: linux/copyq/copyq.conf
@@ -123,10 +155,11 @@
       path: linux/swappy
       force: true
     ~/.config/Thunar:
-      if: "[ `uname` != Darwin ]"
+      if: "[ `uname` != darwin ]"
       path: linux/thunar
       force: true
     ~/.config/xdg-terminals.list:
+      if: "[ `uname` != darwin ]"
       path: linux/xdg/xdg-terminals.list
       force: true
     ~/.config/user-dirs.dirs:
@@ -153,31 +186,13 @@
       if: "[ `uname` != Darwin ]"
       path: linux/xfce4
       force: true
-    ~/.config/Code/User/settings.json:
-      path: universal/code/settings.json
-      force: true
-    ~/.config/Code - OSS/User/settings.json:
-      path: universal/code/settings.json
-      force: true
-    ~/.config/VSCodium/User/settings.json:
-      path: universal/code/settings.json
-      force: true
     ~/.config/autostart:
       if: "[ `uname` != Darwin ]"
       path: linux/autostart
       force: true
-    ~/.gitconfig:
-      path: universal/git/gitconfig
-      force: true
     ~/.gtkrc-2.0:
       if: "[ `uname` != Darwin ]"
       path: linux/gtk2/gtkrc-2.0
-      force: true
-    ~/.config/btop:
-      path: universal/btop
-      force: true
-    ~/.config/neofetch:
-      path: universal/neofetch
       force: true
     ~/.config/lutris:
       if: "[ `uname` != Darwin ]"
@@ -187,21 +202,10 @@
       if: "[ `uname` != Darwin ]"
       path: linux/hyprland/wallpapers
       force: true
-    ~/.tmux.conf:
-      path: universal/tmux/tmux.conf
-      force: true
     ~/.Xresources:
       if: "[ `uname` != Darwin ]"
       path: linux/x11/Xresources
       force: true
-    ~/package.json:
-      path: universal/node/package.json
-      force: true
-    ~/tsconfig.json:
-      path: universal/node/tsconfig.json
-      force: true
-    ~/.editorconfig:
-      path: universal/editorconfig/editorconfig
     ~/.thunderbird/profiles.ini:
       if: "[ `uname` != Darwin ]"
       path: linux/thunderbird/profiles.ini
