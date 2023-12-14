@@ -17,22 +17,22 @@
 
 - link:
     ~/.config/nvim:
-      path: nvim
+      path: universal/nvim
       force: true
     ~/.zshrc:
-      path: zsh/zshrc
+      path: universal/zsh/zshrc
       force: true
     ~/.bash_logout:
-      path: bash/bash_logout
+      path: universal/bash/bash_logout
       force: true
     ~/.wezterm.lua:
-      path: wezterm/wezterm.lua
+      path: universal/wezterm/wezterm.lua
       force: true
     ~/.bash_profile:
-      path: bash/bash_profile
+      path: universal/bash/bash_profile
       force: true
     ~/.bashrc:
-      path: bash/bashrc
+      path: universal/bash/bashrc
       force: true
     ~/.config/copyq/copyq.conf:
       if: "[ `uname` != Darwin ]"
@@ -43,13 +43,13 @@
       path: linux/fontconfig
       force: true
     ~/.config/foot:
-      path: foot
+      path: universal/foot
       force: true
     ~/.config/nushell:
-      path: nushell
+      path: universal/nushell
       force: true
     ~/.config/alacritty:
-      path: alacritty
+      path: universal/alacritty
       force: true
     ~/.config/gtk-3.0:
       if: "[ `uname` != Darwin ]"
@@ -139,30 +139,30 @@
       path: system/xfce4
       force: true
     ~/.config/Code/User/settings.json:
-      path: code/settings.json
+      path: universal/code/settings.json
       force: true
     ~/.config/Code - OSS/User/settings.json:
-      path: code/settings.json
+      path: universal/code/settings.json
       force: true
     ~/.config/VSCodium/User/settings.json:
-      path: code/settings.json
+      path: universal/code/settings.json
       force: true
     ~/.config/autostart:
       if: "[ `uname` != Darwin ]"
       path: linux/autostart
       force: true
     ~/.gitconfig:
-      path: git/gitconfig
+      path: universal/git/gitconfig
       force: true
     ~/.gtkrc-2.0:
       if: "[ `uname` != Darwin ]"
       path: linux/gtk2/gtkrc-2.0
       force: true
     ~/.config/btop:
-      path: btop
+      path: universal/btop
       force: true
     ~/.config/neofetch:
-      path: neofetch
+      path: universal/neofetch
       force: true
     ~/.config/lutris:
       if: "[ `uname` != Darwin ]"
@@ -173,20 +173,20 @@
       path: linux/hyprland/wallpapers
       force: true
     ~/.tmux.conf:
-      path: tmux/tmux.conf
+      path: universal/tmux/tmux.conf
       force: true
     ~/.Xresources:
       if: "[ `uname` != Darwin ]"
       path: linux/x11/Xresources
       force: true
     ~/package.json:
-      path: npm/package.json
+      path: universal/node/package.json
       force: true
     ~/tsconfig.json:
-      path: npm/tsconfig.json
+      path: universal/node/tsconfig.json
       force: true
     ~/.editorconfig:
-      path: editorconfig/editorconfig
+      path: universal/editorconfig/editorconfig
     ~/.thunderbird/profiles.ini:
       if: "[ `uname` != Darwin ]"
       path: linux/thunderbird/profiles.ini
