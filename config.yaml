@@ -36,11 +36,11 @@
       force: true
     ~/.config/copyq/copyq.conf:
       if: "[ `uname` != Darwin ]"
-      path: system/copyq/copyq.conf
+      path: linux/copyq/copyq.conf
       force: true
     ~/.config/fontconfig:
       if: "[ `uname` != Darwin ]"
-      path: system/fontconfig
+      path: linux/fontconfig
       force: true
     ~/.config/foot:
       path: foot
@@ -53,69 +53,69 @@
       force: true
     ~/.config/gtk-3.0:
       if: "[ `uname` != Darwin ]"
-      path: system/gtk3
+      path: linux/gtk3
       force: true
     ~/.config/hypr:
       if: "[ `uname` != Darwin ]"
-      path: system/hyprland
+      path: linux/hyprland
       force: true
     ~/.config/gtklock:
       if: "[ `uname` != Darwin ]"
-      path: system/gtklock
+      path: linux/gtklock
       force: true
     ~/.config/guvcview2:
       if: "[ `uname` != Darwin ]"
-      path: system/guvcview/guvcview2
+      path: linux/guvcview/guvcview2
       force: true
     ~/default.gpfl:
       if: "[ `uname` != Darwin ]"
-      path: system/guvcview/default.gpfl
+      path: linux/guvcview/default.gpfl
       force: true
     ~/.config/Kvantum:
       if: "[ `uname` != Darwin ]"
-      path: system/kvantum
+      path: linux/kvantum
       force: true
     ~/.config/latte:
-      path: system/latte
+      path: linux/latte
       force: true
     ~/.config/swaync:
       if: "[ `uname` != Darwin ]"
-      path: system/hyprland/swaync
+      path: linux/hyprland/swaync
       force: true
     ~/.config/mimeapps.list:
       if: "[ `uname` != Darwin ]"
-      path: system/xdg/mimeapps.list
+      path: linux/xdg/mimeapps.list
       force: true
     ~/.config/nwg-look:
       if: "[ `uname` != Darwin ]"
-      path: system/nwg-look
+      path: linux/nwg-look
       force: true
     ~/.config/nwg-displays:
       if: "[ `uname` != Darwin ]"
-      path: system/nwg-displays
+      path: linux/nwg-displays
       force: true
     ~/.config/qt5ct:
       if: "[ `uname` != Darwin ]"
-      path: system/qt5ct
+      path: linux/qt5ct
       force: true
     ~/.config/qt6ct:
       if: "[ `uname` != Darwin ]"
-      path: system/qt6ct
+      path: linux/qt6ct
       force: true
     ~/.config/swappy:
       if: "[ `uname` != Darwin ]"
-      path: system/swappy
+      path: linux/swappy
       force: true
     ~/.config/Thunar:
       if: "[ `uname` != Darwin ]"
-      path: system/thunar
+      path: linux/thunar
       force: true
     ~/.config/xdg-terminals.list:
-      path: system/xdg/xdg-terminals.list
+      path: linux/xdg/xdg-terminals.list
       force: true
     ~/.config/user-dirs.dirs:
       if: "[ `uname` != Darwin ]"
-      path: system/xdg/user-dirs.dirs
+      path: linux/xdg/user-dirs.dirs
       force: true
     ~/.config/user-dirs.locale:
       if: "[ `uname` != Darwin ]"
@@ -147,14 +147,14 @@
       path: code/settings.json
       force: true
     ~/.config/autostart:
-      path: system/autostart
+      path: linux/autostart
       force: true
     ~/.gitconfig:
       path: git/gitconfig
       force: true
     ~/.gtkrc-2.0:
       if: "[ `uname` != Darwin ]"
-      path: system/gtk2/gtkrc-2.0
+      path: linux/gtk2/gtkrc-2.0
       force: true
     ~/.config/btop:
       path: btop
@@ -164,18 +164,18 @@
       force: true
     ~/.config/lutris:
       if: "[ `uname` != Darwin ]"
-      path: system/lutris
+      path: linux/lutris
       force: true
     ~/wallpapers:
       if: "[ `uname` != Darwin ]"
-      path: system/hyprland/wallpapers
+      path: linux/hyprland/wallpapers
       force: true
     ~/.tmux.conf:
       path: tmux/tmux.conf
       force: true
     ~/.Xresources:
       if: "[ `uname` != Darwin ]"
-      path: system/x11/Xresources
+      path: linux/x11/Xresources
       force: true
     ~/package.json:
       path: npm/package.json
@@ -186,68 +186,69 @@
     ~/.editorconfig:
       path: editorconfig/editorconfig
     ~/.thunderbird/profiles.ini:
-      path: system/thunderbird/profiles.ini
+      path: linux/thunderbird/profiles.ini
       force: true
     ~/.thunderbird/installs.ini:
-      path: system/thunderbird/installs.ini
+      path: linux/thunderbird/installs.ini
       force: true
     ~/.nvidia-settings-rc:
-      path: system/nvidia/nvidia-settings-rc
+      path: linux/nvidia/nvidia-settings-rc
       force: true
     ~/.config/waybar:
       if: "[ `uname` != Darwin ]"
-      path: system/hyprland/waybar
+      path: linux/hyprland/waybar
       force: true
     ~/.config/wofi:
       if: "[ `uname` != Darwin ]"
-      path: system/hyprland/wofi
+      path: linux/hyprland/wofi
       force: true
     ~/.local/bin/:
-      path: system/bin
+      if: "[ `uname` != Darwin ]"
+      path: linux/bin
       force: true
     ~/.config/i3:
       if: "[ `uname` != Darwin ]"
-      path: system/i3
+      path: linux/i3
       force: true
     ~/.config/polybar:
       if: "[ `uname` != Darwin ]"
-      path: system/polybar
+      path: linux/polybar
       force: true
     ~/.config/rofi:
       if: "[ `uname` != Darwin ]"
-      path: system/rofi
+      path: linux/rofi
       force: true
 
     # # electron flag nonsense
     # ~/.config/electron-flags.conf:
-    #   path: system/electron/electron-flags.conf
+    #   path: linux/electron/electron-flags.conf
     #   force: true
     # ~/.config/code-flags.conf:
-    #   path: system/electron/chromium-flags.conf
+    #   path: linux/electron/chromium-flags.conf
     #   force: true
     # ~/.config/chromium-flags.conf:
-    #   path: system/electron/chromium-flags.conf
+    #   path: linux/electron/chromium-flags.conf
     #   force: true
     # ~/.config/chrome-flags.conf:
-    #   path: system/electron/chromium-flags.conf
+    #   path: linux/electron/chromium-flags.conf
     # ~/.config/edge-flags.conf:
-    #   path: system/electron/chromium-flags.conf
+    #   path: linux/electron/chromium-flags.conf
     #   force: true
     # ~/.config/vscodium-flags.conf:
-    #   path: system/electron/electron-flags.conf
+    #   path: linux/electron/electron-flags.conf
     #   force: true
     # ~/.config/electron24-flags.conf:
-    #   path: system/electron/electron-flags.conf
+    #   path: linux/electron/electron-flags.conf
     #   force: true
     # ~/.config/electron25-flags.conf:
-    #   path: system/electron/electron-flags.conf
+    #   path: linux/electron/electron-flags.conf
     #   force: true
     # ~/.config/electron26-flags.conf:
-    #   path: system/electron/electron-flags.conf
+    #   path: linux/electron/electron-flags.conf
     #   force: true
     # ~/.config/electron27-flags.conf:
-    #   path: system/electron/electron-flags.conf
+    #   path: linux/electron/electron-flags.conf
     #   force: true
     # ~/.config/edge-flags.conf:
-    #   path: system/electron/electron-flags.conf
+    #   path: linux/electron/electron-flags.conf
     #   force: true

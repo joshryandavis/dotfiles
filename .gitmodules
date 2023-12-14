@@ -1,3 +1,0 @@
-[submodule "system/nvim"]
-	path = system/nvim
-	url = git@github.com:joshryandavis/lazy.git
