@@ -3,7 +3,12 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 # export ZSH="$HOME/.oh-my-zsh"
-export ZSH="/usr/share/oh-my-zsh"
+
+if [[ $(uname) == "Darwin" ]]; then
+  export ZSH="$HOME/.oh-my-zsh"
+else
+  export ZSH="/usr/share/oh-my-zsh"
+fi
 
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
@@ -67,6 +72,7 @@ export LANG=en_US.UTF-8
 # else
 #   export EDITOR='mvim'
 # fi
+export EDITOR='nvim'
 
 # Compilation flags
 export ARCHFLAGS="-arch x86_64"
@@ -80,9 +86,9 @@ alias pip="pip3"
 # Environment variables
 RUSTC_WRAPPER=sccache
 
-# NVM
-source /usr/share/nvm/init-nvm.sh
-source /usr/share/nvm/init-nvm.sh echo source /usr/share/nvm/init-nvm.sh
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completionource /usr/share/nvm/init-nvm.sh
 
 # Inshellisense
 [ -f ~/.inshellisense/key-bindings.zsh ] && source ~/.inshellisense/key-bindings.zsh
@@ -92,6 +98,6 @@ export PATH="$HOME/.local/bin:$PATH"export NODE_PATH=""
 export NODE_PATH="/usr/lib/node_modules"
 export DOCKER_HOST=unix:///run/user/1000/docker.sock
 alias tmux="TERM=screen-256color-bce tmux"
-if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-  exec tmux
-fi
+# if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+#   exec tmux
+# fi
