@@ -57,7 +57,8 @@
       path: linux/fontconfig
       force: true
     ~/.config/foot:
-      path: universal/foot
+      if: "[ `uname` != Darwin ]"
+      path: linux/foot
       force: true
     ~/.config/nushell:
       path: universal/nushell
