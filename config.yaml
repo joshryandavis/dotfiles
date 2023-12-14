@@ -16,6 +16,12 @@
       if: "[ `uname` != Darwin ]"
 
 - link:
+    ~/.config/nvim:
+      path: nvim
+      force: true
+    ~/.zshrc:
+      path: zsh/zshrc
+      force: true
     ~/.bash_logout:
       path: system/bash/bash_logout
       force: true
@@ -79,9 +85,6 @@
     ~/.config/mimeapps.list:
       if: "[ `uname` != Darwin ]"
       path: system/xdg/mimeapps.list
-      force: true
-    ~/.config/nvim:
-      path: system/nvim
       force: true
     ~/.config/nwg-look:
       if: "[ `uname` != Darwin ]"
@@ -173,9 +176,6 @@
     ~/.Xresources:
       if: "[ `uname` != Darwin ]"
       path: system/x11/Xresources
-      force: true
-    ~/.zshrc:
-      path: system/zsh/zshrc
       force: true
     ~/package.json:
       path: system/npm/package.json
