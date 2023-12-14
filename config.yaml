@@ -134,23 +134,23 @@
       force: true
     ~/.config/user-dirs.locale:
       if: "[ `uname` != Darwin ]"
-      path: system/xdg/user-dirs.locale
+      path: linux/xdg/user-dirs.locale
       force: true
     ~/.config/xsettingsd.conf:
       if: "[ `uname` != Darwin ]"
-      path: system/x11/xsettingsd.conf
+      path: linux/x11/xsettingsd.conf
       force: true
     ~/.config/systemd/user:
       if: "[ `uname` != Darwin ]"
-      path: system/systemd
+      path: linux/systemd
       force: true
     ~/.config/yay:
       if: "[ `uname` != Darwin ]"
-      path: system/yay
+      path: linux/yay
       force: true
     ~/.config/xfce4:
       if: "[ `uname` != Darwin ]"
-      path: system/xfce4
+      path: linux/xfce4
       force: true
     ~/.config/Code/User/settings.json:
       path: universal/code/settings.json
