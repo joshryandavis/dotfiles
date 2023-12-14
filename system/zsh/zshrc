@@ -91,3 +91,7 @@ source /usr/share/nvm/init-nvm.sh echo source /usr/share/nvm/init-nvm.sh
 export PATH="$HOME/.local/bin:$PATH"export NODE_PATH=""
 export NODE_PATH="/usr/lib/node_modules"
 export DOCKER_HOST=unix:///run/user/1000/docker.sock
+alias tmux="TERM=screen-256color-bce tmux"
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  exec tmux
+fi
