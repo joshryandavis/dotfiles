@@ -116,4 +116,4 @@ cd "${BASEDIR}"
 # Update dotfiles repo
 git add . || true
 git commit -m "update dotfiles" || true
-git push origin main/bin/bash
+git push origin main
