@@ -16,7 +16,18 @@
       if: "[ `uname` != Darwin ]"
 
 - link:
+    ~/.config/kitty:
+      path: universal/kitty
+      force: true
+    ~/.config/skhd:
+      path: darwin/skhd
+      force: true
+      if: "[ `uname` = Darwin ]"
+    ~/.config/yabai:
+      if: "[ `uname` = Darwin ]"
+      path: darwin/yabai
     ~/Brewfile:
+      if: "[ `uname` = Darwin ]"
       path: darwin/brew/Brewfile
       force: true
     ~/.config/nvim:
