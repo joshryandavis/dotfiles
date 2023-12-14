@@ -19,6 +19,9 @@
     ~/.bash_logout:
       path: system/bash/bash_logout
       force: true
+    ~/.wezterm.lua:
+      path: system/wezterm/wezterm.lua
+      force: true
     ~/.bash_profile:
       path: system/bash/bash_profile
       force: true
@@ -248,4 +251,3 @@
     # ~/.config/edge-flags.conf:
     #   path: system/electron/electron-flags.conf
     #   force: true
-
