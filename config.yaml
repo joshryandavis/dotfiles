@@ -63,6 +63,12 @@
       force: true
     ~/.editorconfig:
       path: universal/editorconfig/editorconfig
+    ~/.config/nushell:
+      path: universal/nushell
+      force: true
+    ~/.config/alacritty:
+      path: universal/alacritty
+      force: true
 
     # Darwin (macOS)
 
@@ -91,12 +97,6 @@
     ~/.config/foot:
       if: "[ `uname` != Darwin ]"
       path: linux/foot
-      force: true
-    ~/.config/nushell:
-      path: universal/nushell
-      force: true
-    ~/.config/alacritty:
-      path: universal/alacritty
       force: true
     ~/.config/gtk-3.0:
       if: "[ `uname` != Darwin ]"
@@ -155,11 +155,11 @@
       path: linux/swappy
       force: true
     ~/.config/Thunar:
-      if: "[ `uname` != darwin ]"
+      if: "[ `uname` != Darwin ]"
       path: linux/thunar
       force: true
     ~/.config/xdg-terminals.list:
-      if: "[ `uname` != darwin ]"
+      if: "[ `uname` != Darwin ]"
       path: linux/xdg/xdg-terminals.list
       force: true
     ~/.config/user-dirs.dirs:
