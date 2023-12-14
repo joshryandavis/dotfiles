@@ -16,6 +16,9 @@
       if: "[ `uname` != Darwin ]"
 
 - link:
+    ~/Brewfile:
+      path: darwin/brew/Brewfile
+      force: true
     ~/.config/nvim:
       path: universal/nvim
       force: true
