@@ -1,0 +1,7 @@
+game:
+  exe: /home/jd/Games/RimWorld/RimWorldWin64.exe
+system:
+  locale: ''
+wine:
+  system_winetricks: false
+  version: system

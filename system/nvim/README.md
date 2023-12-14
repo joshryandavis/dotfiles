@@ -1,4 +1,3 @@
-# 💤 LazyVim
+# jd's dotfiles
 
-A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
-Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
+`pacman -S --noconfirm --needed git && git clone git@github.com:joshryandavis/dotfiles.git && cd dotfiles && sh install.sh`

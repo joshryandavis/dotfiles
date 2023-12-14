@@ -74,16 +74,14 @@ cd "${BASEDIR}"
 # Update the system
 sudo pacman -Syu --noconfirm
 
-# Check if the file exists
-# if [ -f "packages.txt" ]; then
-#   # Read the package names from the file and install them
-#   while read -r package; do
-#     yay -S --noconfirm --needed "$package"
-#   done < packages.txt
-#   echo "All user-installed packages have been installed."
-# else
-#   echo "The file 'packages.txt' does not exist."
-# fi
+if [ -f "packages.txt" ]; then
+  while read -r package; do
+    yay -S --noconfirm --needed "$package"
+  done < packages.txt
+  echo "All user-installed packages have been installed."
+else
+  echo "The file 'packages.txt' does not exist."
+fi
 
 # Update the package list
 yay -Qqe > packages.txt

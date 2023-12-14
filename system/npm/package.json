@@ -9,6 +9,7 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "@microsoft/inshellisense": "^0.0.1-rc.1"
+    "@microsoft/inshellisense": "^0.0.1-rc.1",
+    "playwright": "^1.39.0"
   }
 }

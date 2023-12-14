@@ -1,0 +1,214 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean:
+    ~/:
+      force: true
+    ~/.config:
+      force: true
+      recursive: true
+
+- create:
+    ~/.local/share/icons/WhiteSur-cursors:
+      force: true
+
+- link:
+    ~/.bash_logout: 
+      path: system/bash/bash_logout
+      force: true
+    ~/.bash_profile: 
+      path: system/bash/bash_profile
+      force: true
+    ~/.bashrc: 
+      path: system/bash/bashrc
+      force: true
+    ~/.config/copyq/copyq.conf: 
+      path: system/copyq/copyq.conf
+      force: true
+    ~/.config/fontconfig: 
+      path: system/fontconfig
+      force: true
+    ~/.config/foot: 
+      path: system/foot
+      force: true
+    ~/.config/nushell:
+      path: system/nushell
+      force: true
+    ~/.config/alacritty: 
+      path: system/alacritty
+      force: true
+    ~/.config/gtk-3.0: 
+      path: system/gtk3
+      force: true
+    ~/.config/gtk-4.0:
+      path: system/gtk4
+      force: true
+    ~/.config/hypr: 
+      path: system/hyprland
+      force: true
+    ~/.config/gtklock: 
+      path: system/gtklock
+      force: true
+    ~/.config/guvcview2: 
+      path: system/guvcview/guvcview2
+      force: true
+    ~/default.gpfl: 
+      path: system/guvcview/default.gpfl
+      force: true
+    ~/.config/Kvantum: 
+      path: system/kvantum
+      force: true
+    ~/.config/latte: 
+      path: system/latte
+      force: true
+    ~/.config/swaync:
+      path: system/hyprland/swaync
+      force: true
+    ~/.config/mimeapps.list: 
+      path: system/xdg/mimeapps.list
+      force: true
+    ~/.config/swaync:
+      path: system/swaync
+      force: true
+    ~/.config/nvim: 
+      path: system/nvim
+      force: true
+    ~/.config/nwg-look: 
+      path: system/nwg-look
+      force: true
+    ~/.config/nwg-displays: 
+      path: system/nwg-displays
+      force: true
+    ~/.config/qt5ct: 
+      path: system/qt5ct
+      force: true
+    ~/.config/qt6ct: 
+      path: system/qt6ct
+      force: true
+    ~/.config/swappy: 
+      path: system/swappy
+      force: true
+    ~/.config/Thunar: 
+      path: system/thunar
+      force: true
+    ~/.config/xdg-terminals.list: 
+      path: system/xdg/xdg-terminals.list
+      force: true
+    ~/.config/user-dirs.dirs: 
+      path: system/xdg/user-dirs.dirs
+      force: true
+    ~/.config/user-dirs.locale: 
+      path: system/xdg/user-dirs.locale
+      force: true
+    ~/.config/xsettingsd.conf: 
+      path: system/x11/xsettingsd.conf
+      force: true
+    ~/.config/systemd/user: 
+      path: system/systemd
+      force: true
+    ~/.config/yay: 
+      path: system/yay
+      force: true
+    ~/.config/xfce4: 
+      path: system/xfce4
+      force: true
+    ~/.config/Code/User/settings.json: 
+      path: system/code/settings.json
+      force: true
+    ~/.config/Code - OSS/User/settings.json: 
+      path: system/code/settings.json
+      force: true
+    ~/.config/VSCodium/User/settings.json:
+      path: system/code/settings.json
+      force: true
+    ~/.config/autostart: 
+      path: system/autostart
+      force: true
+    ~/.gitconfig: 
+      path: system/git/gitconfig
+      force: true
+    ~/.gtkrc-2.0: 
+      path: system/gtk2/gtkrc-2.0
+    ~/.config/btop:
+      path: system/btop
+      force: true
+    ~/.config/neofetch:
+      path: system/neofetch
+      force: true
+    ~/.config/lutris:
+      path: system/lutris
+      force: true
+    ~/wallpapers: 
+      path: system/hyprland/wallpapers
+      force: true
+    ~/.tmux.conf: 
+      path: system/tmux/tmux.conf
+      force: true
+    ~/.Xresources: 
+      path: system/x11/Xresources
+      force: true
+    ~/.zshrc: 
+      path: system/zsh/zshrc
+      force: true
+    ~/package.json: 
+      path: system/npm/package.json
+      force: true
+    ~/tsconfig.json: 
+      path: system/npm/tsconfig.json
+      force: true
+    ~/.editorconfig: 
+      path: system/editorconfig/editorconfig
+    ~/.thunderbird/profiles.ini:
+      path: system/thunderbird/profiles.ini
+      force: true
+    ~/.thunderbird/installs.ini:
+      path: system/thunderbird/installs.ini
+      force: true
+    ~/.nvidia-settings-rc:
+      path: system/nvidia/nvidia-settings-rc
+      force: true
+    ~/.config/waybar:
+      path: system/hyprland/waybar
+      force: true
+    ~/.config/wofi:
+      path: system/hyprland/wofi
+      force: true
+    ~/.local/bin/:
+      path: system/bin
+      force: true
+    
+    # electron flag nonsense
+    ~/.config/electron-flags.conf: 
+      path: system/electron/electron-flags.conf
+      force: true
+    ~/.config/code-flags.conf: 
+      path: system/electron/electron-flags.conf
+      force: true
+    ~/.config/codium-flags.conf: 
+      path: system/electron/electron-flags.conf
+      force: true
+    ~/.config/chromium-flags.conf: 
+      path: system/electron/chromium-flags.conf
+      force: true
+    ~/.config/chrome-flags.conf: 
+      path: system/electron/chromium-flags.conf
+    ~/.config/edge-flags.conf: 
+      path: system/electron/chromium-flags.conf
+      force: true
+    ~/.config/vscodium-flags.conf: 
+      path: system/electron/electron-flags.conf
+      force: true
+    ~/.config/electron24-flags.conf: 
+      path: system/electron/electron-flags.conf
+      force: true
+    ~/.config/electron25-flags.conf: 
+      path: system/electron/electron-flags.conf
+      force: true
+    ~/.config/electron26-flags.conf: 
+      path: system/electron/electron-flags.conf
+      force: true
+    ~/.config/electron27-flags.conf: 
+      path: system/electron/electron-flags.conf
+      force: true

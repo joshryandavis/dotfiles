@@ -88,4 +88,5 @@ source /usr/share/nvm/init-nvm.sh echo source /usr/share/nvm/init-nvm.sh
 [ -f ~/.inshellisense/key-bindings.zsh ] && source ~/.inshellisense/key-bindings.zsh
 
 # make sure .local/bin is in the PATH
-export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"export NODE_PATH=""
+export NODE_PATH="/usr/lib/node_modules"

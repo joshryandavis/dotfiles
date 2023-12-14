@@ -42,9 +42,9 @@
     ~/.config/gtk-3.0: 
       path: system/gtk3
       force: true
-    ~/.config/gtk-4.0:
-      path: system/gtk4
-      force: true
+    # ~/.config/gtk-4.0:
+      # path: system/gtk4
+      # force: true
     ~/.config/hypr: 
       path: system/hyprland
       force: true
@@ -131,6 +131,7 @@
       force: true
     ~/.gtkrc-2.0: 
       path: system/gtk2/gtkrc-2.0
+      force: true
     ~/.config/btop:
       path: system/btop
       force: true
@@ -178,37 +179,46 @@
     ~/.local/bin/:
       path: system/bin
       force: true
+    ~/.config/i3:
+      path: system/i3
+      force: true
+    ~/.config/polybar:
+      path: system/polybar
+      force: true
+    ~/.config/rofi:
+      path: system/rofi
+      force: true
     
-    # electron flag nonsense
-    ~/.config/electron-flags.conf: 
-      path: system/electron/electron-flags.conf
-      force: true
-    ~/.config/code-flags.conf: 
-      path: system/electron/electron-flags.conf
-      force: true
-    ~/.config/codium-flags.conf: 
-      path: system/electron/electron-flags.conf
-      force: true
-    ~/.config/chromium-flags.conf: 
-      path: system/electron/chromium-flags.conf
-      force: true
-    ~/.config/chrome-flags.conf: 
-      path: system/electron/chromium-flags.conf
-    ~/.config/edge-flags.conf: 
-      path: system/electron/chromium-flags.conf
-      force: true
-    ~/.config/vscodium-flags.conf: 
-      path: system/electron/electron-flags.conf
-      force: true
-    ~/.config/electron24-flags.conf: 
-      path: system/electron/electron-flags.conf
-      force: true
-    ~/.config/electron25-flags.conf: 
-      path: system/electron/electron-flags.conf
-      force: true
-    ~/.config/electron26-flags.conf: 
-      path: system/electron/electron-flags.conf
-      force: true
-    ~/.config/electron27-flags.conf: 
-      path: system/electron/electron-flags.conf
-      force: true
+    # # electron flag nonsense
+    # ~/.config/electron-flags.conf: 
+    #   path: system/electron/electron-flags.conf
+    #   force: true
+    # ~/.config/code-flags.conf: 
+    #   path: system/electron/chromium-flags.conf
+    #   force: true
+    # ~/.config/chromium-flags.conf: 
+    #   path: system/electron/chromium-flags.conf
+    #   force: true
+    # ~/.config/chrome-flags.conf: 
+    #   path: system/electron/chromium-flags.conf
+    # ~/.config/edge-flags.conf: 
+    #   path: system/electron/chromium-flags.conf
+    #   force: true
+    # ~/.config/vscodium-flags.conf: 
+    #   path: system/electron/electron-flags.conf
+    #   force: true
+    # ~/.config/electron24-flags.conf: 
+    #   path: system/electron/electron-flags.conf
+    #   force: true
+    # ~/.config/electron25-flags.conf: 
+    #   path: system/electron/electron-flags.conf
+    #   force: true
+    # ~/.config/electron26-flags.conf: 
+    #   path: system/electron/electron-flags.conf
+    #   force: true
+    # ~/.config/electron27-flags.conf: 
+    #   path: system/electron/electron-flags.conf
+    #   force: true
+    # ~/.config/edge-flags.conf: 
+    #   path: system/electron/electron-flags.conf
+    #   force: true
