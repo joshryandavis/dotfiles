@@ -1,6 +1,0 @@
-theme/dependencies/themes/*/*
-system/dependencies/zsh/*/*
-.DS_Store
-node_modules
-logs/*
-!logs

@@ -1,5 +1,0 @@
-game:
-  exe: /home/jd/RimWorld/RimWorldWin64.exe
-system: {}
-wine:
-  custom_wine_path: /usr/share/steam/compatibilitytools.d/proton-ge-custom/files/bin/wine64
