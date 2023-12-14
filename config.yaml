@@ -73,12 +73,13 @@
     # Darwin (macOS)
 
     ~/.config/skhd:
+      if: "[ `uname` = Darwin ]"
       path: darwin/skhd
       force: true
-      if: "[ `uname` = Darwin ]"
     ~/.config/yabai:
       if: "[ `uname` = Darwin ]"
       path: darwin/yabai
+      force: true
     ~/Brewfile:
       if: "[ `uname` = Darwin ]"
       path: darwin/brew/Brewfile

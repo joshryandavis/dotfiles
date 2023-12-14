@@ -1,70 +1,72 @@
-#!/bin/zsh
+#!/bin/bash
 
 set -e # exit immediately if a command exits with a non-zero status
 
-CONFIG="config.yaml"
-BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-
+# if not darwin (i.e. is linux)
 if [[ "$OSTYPE" != "darwin"* ]]; then
-  if ! command -v yay &> /dev/null; then
+  if ! command -v yay &>/dev/null; then
     cd ~ && pacman -S --noconfirm --needed git base-devel && git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si
   fi
 
   # Install zsh if not installed
-  if ! command -v zsh &> /dev/null; then
+  if ! command -v zsh &>/dev/null; then
     yay -S --noconfirm --needed zsh
   fi
 
   yay -S --noconfirm --needed dotbot
   yay -S --noconfirm --needed oh-my-zsh-git oh-my-zsh-autosuggestions-git oh-my-syntax-highlighting-git
-  # yay -S --noconfirm --needed whitesur-cursor-theme-git whitesur-gtk-theme-git whitesur-icon-theme-git
+  yay -S --noconfirm --needed whitesur-cursor-theme-git whitesur-gtk-theme-git whitesur-icon-theme-git
+
+  mkdir ~/.local/share/icons/WhiteSur-cursors
+
+  cd ~ && git clone https://github.com/vinceliuice/WhiteSur-kde && cd WhiteSur-kde && ./install.sh || {
+    echo "Error: WhiteSur-kde installation failed!"
+    # exit 1
+  }
+
+  cd ~ && git clone https://github.com/hyprwm/contrib && cd contrib || {
+    echo "Error: contrib installation failed!"
+    # exit 1
+  }
+
+  cd hyprprop && sudo make install || {
+    echo "Error: hyprprop installation failed!"
+    # exit 1
+  }
+
+  cd grimblast && sudo make install || {
+    echo "Error: grimblast installation failed!"
+    # exit 1
+  }
+
+  cd hdrop && sudo make install || {
+    echo "Error: hdrop installation failed!"
+    # exit 1
+  }
+
+  cd scratchpad && sudo make install || {
+    echo "Error: scratchpad installation failed!"
+    # exit 1
+  }
+
+  cd shellevents && sudo make install || {
+    echo "Error: shellevents installation failed!"
+    # exit 1
+  }
+
+  cd try_swap_workspace && sudo make install || {
+    echo "Error: try_swap_workspace installation failed!"
+    # exit 1
+  }
 else
   brew install zsh
   brew install dotbot
   brew install zsh-autosuggestions zsh-syntax-highlighting
 fi
 
-# mkdir ~/.local/share/icons/WhiteSur-cursors
-# cd ~ && git clone https://github.com/vinceliuice/WhiteSur-kde && cd WhiteSur-kde && ./install.sh || {
-#   echo "Error: WhiteSur-kde installation failed!"
-#   # exit 1
-# }
-#
-# cd ~ && git clone https://github.com/hyprwm/contrib && cd contrib || {
-#   echo "Error: contrib installation failed!"
-#   # exit 1
-# }
-#
-# cd hyprprop && sudo make install || {
-#   echo "Error: hyprprop installation failed!"
-#   # exit 1
-# }
-#
-# cd grimblast && sudo make install || {
-#   echo "Error: grimblast installation failed!"
-#   # exit 1
-# }
-#
-# cd hdrop && sudo make install || {
-#   echo "Error: hdrop installation failed!"
-#   # exit 1
-# }
-#
-# cd scratchpad && sudo make install || {
-#   echo "Error: scratchpad installation failed!"
-#   # exit 1
-# }
-#
-# cd shellevents && sudo make install || {
-#   echo "Error: shellevents installation failed!"
-#   # exit 1
-# }
-#
-# cd try_swap_workspace && sudo make install || {
-#   echo "Error: try_swap_workspace installation failed!"
-#   # exit 1
-# }
-#
+CONFIG="config.yaml"
+
+BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 cd "${BASEDIR}"
 
@@ -74,10 +76,12 @@ dotbot -d "${BASEDIR}" -c "${CONFIG}" "${@}" || {
   exit 1
 }
 
-cd ~/.local/bin && chmod u+r+x * && cd ~
+cd ~/.local/bin && chmod u+r+x ./* && cd ~
 
 cd "${BASEDIR}"
 
+# if [[ "$OSTYPE" != "darwin"* ]]; then
+#
 # Update the system
 # sudo pacman -Syu --noconfirm
 #
@@ -105,7 +109,11 @@ cd "${BASEDIR}"
 # sudo update-grub
 # sudo mkinitcpio --config /etc/mkinitcpio.conf --generate /boot/initramfs-custom.img
 #
+# elif
+
+# fi
+
 # Update dotfiles repo
 git add . || true
 git commit -m "update dotfiles" || true
-git push origin main
+git push origin main/bin/bash
