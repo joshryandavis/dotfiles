@@ -13,123 +13,141 @@
 - create:
     ~/.local/share/icons/WhiteSur-cursors:
       force: true
+      if: "[ `uname` != Darwin ]"
 
 - link:
-    ~/.bash_logout: 
+    ~/.bash_logout:
       path: system/bash/bash_logout
       force: true
-    ~/.bash_profile: 
+    ~/.bash_profile:
       path: system/bash/bash_profile
       force: true
-    ~/.bashrc: 
+    ~/.bashrc:
       path: system/bash/bashrc
       force: true
-    ~/.config/copyq/copyq.conf: 
+    ~/.config/copyq/copyq.conf:
+      if: "[ `uname` != Darwin ]"
       path: system/copyq/copyq.conf
       force: true
-    ~/.config/fontconfig: 
+    ~/.config/fontconfig:
+      if: "[ `uname` != Darwin ]"
       path: system/fontconfig
       force: true
-    ~/.config/foot: 
+    ~/.config/foot:
       path: system/foot
       force: true
     ~/.config/nushell:
       path: system/nushell
       force: true
-    ~/.config/alacritty: 
+    ~/.config/alacritty:
       path: system/alacritty
       force: true
-    ~/.config/gtk-3.0: 
+    ~/.config/gtk-3.0:
+      if: "[ `uname` != Darwin ]"
       path: system/gtk3
       force: true
-    # ~/.config/gtk-4.0:
-      # path: system/gtk4
-      # force: true
-    ~/.config/hypr: 
+    ~/.config/hypr:
+      if: "[ `uname` != Darwin ]"
       path: system/hyprland
       force: true
-    ~/.config/gtklock: 
+    ~/.config/gtklock:
+      if: "[ `uname` != Darwin ]"
       path: system/gtklock
       force: true
-    ~/.config/guvcview2: 
+    ~/.config/guvcview2:
+      if: "[ `uname` != Darwin ]"
       path: system/guvcview/guvcview2
       force: true
-    ~/default.gpfl: 
+    ~/default.gpfl:
+      if: "[ `uname` != Darwin ]"
       path: system/guvcview/default.gpfl
       force: true
-    ~/.config/Kvantum: 
+    ~/.config/Kvantum:
+      if: "[ `uname` != Darwin ]"
       path: system/kvantum
       force: true
-    ~/.config/latte: 
+    ~/.config/latte:
       path: system/latte
       force: true
     ~/.config/swaync:
+      if: "[ `uname` != Darwin ]"
       path: system/hyprland/swaync
       force: true
-    ~/.config/mimeapps.list: 
+    ~/.config/mimeapps.list:
+      if: "[ `uname` != Darwin ]"
       path: system/xdg/mimeapps.list
       force: true
-    ~/.config/swaync:
-      path: system/swaync
-      force: true
-    ~/.config/nvim: 
+    ~/.config/nvim:
       path: system/nvim
       force: true
-    ~/.config/nwg-look: 
+    ~/.config/nwg-look:
+      if: "[ `uname` != Darwin ]"
       path: system/nwg-look
       force: true
-    ~/.config/nwg-displays: 
+    ~/.config/nwg-displays:
+      if: "[ `uname` != Darwin ]"
       path: system/nwg-displays
       force: true
-    ~/.config/qt5ct: 
+    ~/.config/qt5ct:
+      if: "[ `uname` != Darwin ]"
       path: system/qt5ct
       force: true
-    ~/.config/qt6ct: 
+    ~/.config/qt6ct:
+      if: "[ `uname` != Darwin ]"
       path: system/qt6ct
       force: true
-    ~/.config/swappy: 
+    ~/.config/swappy:
+      if: "[ `uname` != Darwin ]"
       path: system/swappy
       force: true
-    ~/.config/Thunar: 
+    ~/.config/Thunar:
+      if: "[ `uname` != Darwin ]"
       path: system/thunar
       force: true
-    ~/.config/xdg-terminals.list: 
+    ~/.config/xdg-terminals.list:
       path: system/xdg/xdg-terminals.list
       force: true
-    ~/.config/user-dirs.dirs: 
+    ~/.config/user-dirs.dirs:
+      if: "[ `uname` != Darwin ]"
       path: system/xdg/user-dirs.dirs
       force: true
-    ~/.config/user-dirs.locale: 
+    ~/.config/user-dirs.locale:
+      if: "[ `uname` != Darwin ]"
       path: system/xdg/user-dirs.locale
       force: true
-    ~/.config/xsettingsd.conf: 
+    ~/.config/xsettingsd.conf:
+      if: "[ `uname` != Darwin ]"
       path: system/x11/xsettingsd.conf
       force: true
-    ~/.config/systemd/user: 
+    ~/.config/systemd/user:
+      if: "[ `uname` != Darwin ]"
       path: system/systemd
       force: true
-    ~/.config/yay: 
+    ~/.config/yay:
+      if: "[ `uname` != Darwin ]"
       path: system/yay
       force: true
-    ~/.config/xfce4: 
+    ~/.config/xfce4:
+      if: "[ `uname` != Darwin ]"
       path: system/xfce4
       force: true
-    ~/.config/Code/User/settings.json: 
+    ~/.config/Code/User/settings.json:
       path: system/code/settings.json
       force: true
-    ~/.config/Code - OSS/User/settings.json: 
+    ~/.config/Code - OSS/User/settings.json:
       path: system/code/settings.json
       force: true
     ~/.config/VSCodium/User/settings.json:
       path: system/code/settings.json
       force: true
-    ~/.config/autostart: 
+    ~/.config/autostart:
       path: system/autostart
       force: true
-    ~/.gitconfig: 
+    ~/.gitconfig:
       path: system/git/gitconfig
       force: true
-    ~/.gtkrc-2.0: 
+    ~/.gtkrc-2.0:
+      if: "[ `uname` != Darwin ]"
       path: system/gtk2/gtkrc-2.0
       force: true
     ~/.config/btop:
@@ -139,27 +157,30 @@
       path: system/neofetch
       force: true
     ~/.config/lutris:
+      if: "[ `uname` != Darwin ]"
       path: system/lutris
       force: true
-    ~/wallpapers: 
+    ~/wallpapers:
+      if: "[ `uname` != Darwin ]"
       path: system/hyprland/wallpapers
       force: true
-    ~/.tmux.conf: 
+    ~/.tmux.conf:
       path: system/tmux/tmux.conf
       force: true
-    ~/.Xresources: 
+    ~/.Xresources:
+      if: "[ `uname` != Darwin ]"
       path: system/x11/Xresources
       force: true
-    ~/.zshrc: 
+    ~/.zshrc:
       path: system/zsh/zshrc
       force: true
-    ~/package.json: 
+    ~/package.json:
       path: system/npm/package.json
       force: true
-    ~/tsconfig.json: 
+    ~/tsconfig.json:
       path: system/npm/tsconfig.json
       force: true
-    ~/.editorconfig: 
+    ~/.editorconfig:
       path: system/editorconfig/editorconfig
     ~/.thunderbird/profiles.ini:
       path: system/thunderbird/profiles.ini
@@ -171,54 +192,60 @@
       path: system/nvidia/nvidia-settings-rc
       force: true
     ~/.config/waybar:
+      if: "[ `uname` != Darwin ]"
       path: system/hyprland/waybar
       force: true
     ~/.config/wofi:
+      if: "[ `uname` != Darwin ]"
       path: system/hyprland/wofi
       force: true
     ~/.local/bin/:
       path: system/bin
       force: true
     ~/.config/i3:
+      if: "[ `uname` != Darwin ]"
       path: system/i3
       force: true
     ~/.config/polybar:
+      if: "[ `uname` != Darwin ]"
       path: system/polybar
       force: true
     ~/.config/rofi:
+      if: "[ `uname` != Darwin ]"
       path: system/rofi
       force: true
-    
+
     # # electron flag nonsense
-    # ~/.config/electron-flags.conf: 
+    # ~/.config/electron-flags.conf:
     #   path: system/electron/electron-flags.conf
     #   force: true
-    # ~/.config/code-flags.conf: 
+    # ~/.config/code-flags.conf:
     #   path: system/electron/chromium-flags.conf
     #   force: true
-    # ~/.config/chromium-flags.conf: 
+    # ~/.config/chromium-flags.conf:
     #   path: system/electron/chromium-flags.conf
     #   force: true
-    # ~/.config/chrome-flags.conf: 
+    # ~/.config/chrome-flags.conf:
     #   path: system/electron/chromium-flags.conf
-    # ~/.config/edge-flags.conf: 
+    # ~/.config/edge-flags.conf:
     #   path: system/electron/chromium-flags.conf
     #   force: true
-    # ~/.config/vscodium-flags.conf: 
+    # ~/.config/vscodium-flags.conf:
     #   path: system/electron/electron-flags.conf
     #   force: true
-    # ~/.config/electron24-flags.conf: 
+    # ~/.config/electron24-flags.conf:
     #   path: system/electron/electron-flags.conf
     #   force: true
-    # ~/.config/electron25-flags.conf: 
+    # ~/.config/electron25-flags.conf:
     #   path: system/electron/electron-flags.conf
     #   force: true
-    # ~/.config/electron26-flags.conf: 
+    # ~/.config/electron26-flags.conf:
     #   path: system/electron/electron-flags.conf
     #   force: true
-    # ~/.config/electron27-flags.conf: 
+    # ~/.config/electron27-flags.conf:
     #   path: system/electron/electron-flags.conf
     #   force: true
-    # ~/.config/edge-flags.conf: 
+    # ~/.config/edge-flags.conf:
     #   path: system/electron/electron-flags.conf
     #   force: true
+

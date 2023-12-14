@@ -5,14 +5,20 @@ set -e # exit immediately if a command exits with a non-zero status
 CONFIG="config.yaml"
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-# Install yay
-if ! command -v yay &> /dev/null; then
-  cd ~ && pacman -S --noconfirm --needed git base-devel && git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si
-fi
+if [[ "$OSTYPE" != "darwin"* ]]; then
+  if ! command -v yay &> /dev/null; then
+    cd ~ && pacman -S --noconfirm --needed git base-devel && git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si
+  fi
 
-# Install zsh if not installed
-if ! command -v zsh &> /dev/null; then
-  yay -S --noconfirm --needed zsh
+  # Install zsh if not installed
+  if ! command -v zsh &> /dev/null; then
+    yay -S --noconfirm --needed zsh
+  fi
+  yay -S --noconfirm --needed dotbot
+
+else
+  brew install zsh
+  brew install dotbot
 fi
 
 # yay -S --noconfirm --needed dotbot
