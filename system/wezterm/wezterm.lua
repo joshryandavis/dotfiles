@@ -13,7 +13,17 @@ end
 -- This is where you actually apply your config choices
 
 -- For example, changing the color scheme:
-config.color_scheme = "AdventureTime"
+-- config.color_scheme = "AdventureTime"
+
+config.window_padding = {
+  left = 2,
+  right = 2,
+  top = 0,
+  bottom = 0,
+}
+config.color_scheme = "Catppuccin Mocha"
+-- config.use_fancy_tab_bar = false
+config.window_decorations = "RESIZE"
 
 -- and finally, return the configuration to wezterm
 return config
