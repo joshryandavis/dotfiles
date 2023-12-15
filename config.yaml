@@ -40,12 +40,8 @@
       path: shell/git/gitconfig
     ~/.ssh/config:
       path: shell/ssh/config
-    ~/.config/btop:
-      path: shell/btop
-    ~/.config/neofetch:
-      path: shell/neofetch
 
-    # Universal
+      # Universal
 
     ~/.wezterm.lua:
       path: universal/wezterm/wezterm.lua
