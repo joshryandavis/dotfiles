@@ -23,7 +23,7 @@
     # Neovim
 
     ~/.config/nvim:
-      path: shell/nvim
+      path: neovim
 
     # Shell
 
