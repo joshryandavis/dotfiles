@@ -192,7 +192,7 @@
       force: true
     ~/.config/xsettingsd.conf:
       if: "[ `uname` != Darwin ]"
-      path: linux/x11/xsettingsd.conf
+      path: linux/xsettingsd/xsettingsd.conf
       force: true
     ~/.config/systemd/user:
       if: "[ `uname` != Darwin ]"
@@ -220,7 +220,7 @@
     #   force: true
     ~/.Xresources:
       if: "[ `uname` != Darwin ]"
-      path: linux/x11/Xresources
+      path: linux/xresources/Xresources
       force: true
     ~/.thunderbird/profiles.ini:
       if: "[ `uname` != Darwin ]"
