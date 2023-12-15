@@ -106,6 +106,10 @@
       if: "[ `uname` != Darwin ]"
       path: linux/gtk2/gtkrc-2.0
       force: true
+    ~/.config/gtk-2.0:
+      if: "[ `uname` != Darwin ]"
+      path: linux/gtk2
+      force: true
     ~/.config/gtk-3.0:
       if: "[ `uname` != Darwin ]"
       path: linux/gtk3
