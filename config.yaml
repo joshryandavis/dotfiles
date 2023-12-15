@@ -102,6 +102,10 @@
       if: "[ `uname` != Darwin ]"
       path: linux/foot
       force: true
+    ~/.gtkrc-2.0:
+      if: "[ `uname` != Darwin ]"
+      path: linux/gtk2/gtkrc-2.0
+      force: true
     ~/.config/gtk-3.0:
       if: "[ `uname` != Darwin ]"
       path: linux/gtk3
@@ -178,6 +182,10 @@
       if: "[ `uname` != Darwin ]"
       path: linux/xdg/user-dirs.locale
       force: true
+    ~/.config/xsettingsd:
+      if: "[ `uname` != Darwin ]"
+      path: linux/xsettingsd
+      force: true
     ~/.config/xsettingsd.conf:
       if: "[ `uname` != Darwin ]"
       path: linux/x11/xsettingsd.conf
@@ -197,10 +205,6 @@
     ~/.config/autostart:
       if: "[ `uname` != Darwin ]"
       path: linux/autostart
-      force: true
-    ~/.gtkrc-2.0:
-      if: "[ `uname` != Darwin ]"
-      path: linux/gtk2/gtkrc-2.0
       force: true
     ~/.config/lutris:
       if: "[ `uname` != Darwin ]"
@@ -238,19 +242,6 @@
       if: "[ `uname` != Darwin ]"
       path: linux/bin
       force: true
-    ~/.config/i3:
-      if: "[ `uname` != Darwin ]"
-      path: linux/i3
-      force: true
-    ~/.config/polybar:
-      if: "[ `uname` != Darwin ]"
-      path: linux/polybar
-      force: true
-    ~/.config/rofi:
-      if: "[ `uname` != Darwin ]"
-      path: linux/rofi
-      force: true
-
     # # electron flag nonsense
     # ~/.config/electron-flags.conf:
     #   path: linux/electron/electron-flags.conf
