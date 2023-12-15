@@ -36,6 +36,14 @@
       path: shell/bash/bashrc
     ~/.tmux.conf:
       path: shell/tmux/tmux.conf
+    ~/.gitconfig:
+      path: shell/git/gitconfig
+    ~/.ssh/config:
+      path: shell/ssh/config
+    ~/.config/btop:
+      path: shell/btop
+    ~/.config/neofetch:
+      path: shell/neofetch
 
     # Universal
 
@@ -49,12 +57,6 @@
       path: universal/code/settings.json
     ~/.config/VSCodium/User/settings.json:
       path: universal/code/settings.json
-    ~/.gitconfig:
-      path: universal/git/gitconfig
-    ~/.config/btop:
-      path: universal/btop
-    ~/.config/neofetch:
-      path: universal/neofetch
     ~/package.json:
       path: universal/node/package.json
     ~/tsconfig.json:
