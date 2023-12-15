@@ -20,10 +20,13 @@
     ~/.local/bin:
       path: bin
 
-    # Shell
+    # Neovim
 
     ~/.config/nvim:
       path: shell/nvim
+
+    # Shell
+
     ~/.zshrc:
       path: shell/zshrc
     ~/.zsh:
