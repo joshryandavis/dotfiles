@@ -63,7 +63,7 @@
     ~/.config/alacritty:
       path: universal/alacritty
 
-    # Linting
+    # Misc
 
     ~/.editorconfig:
       path: .editorconfig
