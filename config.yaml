@@ -23,19 +23,19 @@
     # Shell
 
     ~/.config/nvim:
-      path: universal/nvim
+      path: shell/nvim
     ~/.zshrc:
-      path: universal/shell/zshrc
+      path: shell/zshrc
     ~/.zsh:
-      path: universal/shell/zsh
+      path: shell/zsh
     ~/.bash_logout:
-      path: universal/shell/bash/bash_logout
+      path: shell/bash/bash_logout
     ~/.bash_profile:
-      path: universal/shell/bash/bash_profile
+      path: shell/bash/bash_profile
     ~/.bashrc:
-      path: universal/shell/bash/bashrc
+      path: shell/bash/bashrc
     ~/.tmux.conf:
-      path: universal/shell/tmux/tmux.conf
+      path: shell/tmux/tmux.conf
 
     # Universal
 
