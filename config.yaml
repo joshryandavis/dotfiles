@@ -7,6 +7,12 @@
 - clean:
     ~/:
       force: true
+    ~/.config:
+      force: true
+      recursive: true
+    ~/.local/bin:
+      force: true
+      recursive: true
 
 - link:
     # Universal
