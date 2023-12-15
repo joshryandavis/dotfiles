@@ -60,10 +60,13 @@
       path: universal/node/package.json
     ~/tsconfig.json:
       path: universal/node/tsconfig.json
-    ~/.editorconfig:
-      path: universal/editorconfig/editorconfig
     ~/.config/alacritty:
       path: universal/alacritty
+
+    # Linting
+
+    ~/.editorconfig:
+      path: .editorconfig
 
     # Darwin (macOS)
 
