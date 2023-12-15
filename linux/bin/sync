@@ -1,0 +1,4 @@
+#!/bin/zsh
+cd ~/dotfiles
+git pull
+sh install
