@@ -15,23 +15,32 @@
       recursive: true
 
 - link:
-    # Universal
+    # Scripts
+
     ~/.local/bin:
       path: bin
+
+    # Shell
+
     ~/.config/nvim:
       path: universal/nvim
     ~/.zshrc:
-      path: universal/zshrc
+      path: universal/shell/zshrc
     ~/.zsh:
-      path: universal/zsh
+      path: universal/shell/zsh
     ~/.bash_logout:
-      path: universal/bash/bash_logout
+      path: universal/shell/bash/bash_logout
+    ~/.bash_profile:
+      path: universal/shell/bash/bash_profile
+    ~/.bashrc:
+      path: universal/shell/bash/bashrc
+    ~/.tmux.conf:
+      path: universal/shell/tmux/tmux.conf
+
+    # Universal
+
     ~/.wezterm.lua:
       path: universal/wezterm/wezterm.lua
-    ~/.bash_profile:
-      path: universal/bash/bash_profile
-    ~/.bashrc:
-      path: universal/bash/bashrc
     ~/.config/kitty:
       path: universal/kitty
     ~/.config/Code/User/settings.json:
@@ -46,16 +55,12 @@
       path: universal/btop
     ~/.config/neofetch:
       path: universal/neofetch
-    ~/.tmux.conf:
-      path: universal/tmux/tmux.conf
     ~/package.json:
       path: universal/node/package.json
     ~/tsconfig.json:
       path: universal/node/tsconfig.json
     ~/.editorconfig:
       path: universal/editorconfig/editorconfig
-    ~/.config/nushell:
-      path: universal/nushell
     ~/.config/alacritty:
       path: universal/alacritty
 
