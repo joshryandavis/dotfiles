@@ -17,7 +17,10 @@
       path: universal/nvim
       force: true
     ~/.zshrc:
-      path: universal/zsh/zshrc
+      path: universal/zshrc
+      force: true
+    ~/.zsh:
+      path: universal/zsh
       force: true
     ~/.bash_logout:
       path: universal/bash/bash_logout
@@ -102,6 +105,10 @@
     ~/.config/gtk-3.0:
       if: "[ `uname` != Darwin ]"
       path: linux/gtk3
+      force: true
+    ~/.config/gtk-4.0:
+      if: "[ `uname` != Darwin ]"
+      path: linux/gtk4
       force: true
     ~/.config/hypr:
       if: "[ `uname` != Darwin ]"
@@ -199,10 +206,10 @@
       if: "[ `uname` != Darwin ]"
       path: linux/lutris
       force: true
-    ~/wallpapers:
-      if: "[ `uname` != Darwin ]"
-      path: linux/hyprland/wallpapers
-      force: true
+    # ~/wallpapers:
+    #   if: "[ `uname` != Darwin ]"
+    #   path: linux/hyprland/wallpapers
+    #   force: true
     ~/.Xresources:
       if: "[ `uname` != Darwin ]"
       path: linux/x11/Xresources
