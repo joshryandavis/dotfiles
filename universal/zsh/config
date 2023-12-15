@@ -77,7 +77,7 @@ export NVM_DIR="$HOME/.nvm"
 # Inshellisense
 # [ -f ~/.inshellisense/key-bindings.zsh ] && source ~/.inshellisense/key-bindings.zsh
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH="$HOME/bin:/usr/local/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 
 export NODE_PATH=""
