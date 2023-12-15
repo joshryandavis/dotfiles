@@ -76,6 +76,9 @@
     ~/Brewfile:
       if: "[ `uname` = Darwin ]"
       path: darwin/brew/Brewfile
+    ~/.warp:
+      if: "[ `uname` = Darwin ]"
+      path: darwin/warp
 
       # Linux
 
