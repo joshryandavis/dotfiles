@@ -18,12 +18,12 @@
     # Scripts
 
     ~/.local/bin:
-      path: bin
+      path: scripts
 
     # Neovim
 
     ~/.config/nvim:
-      path: nvim
+      path: shell/nvim
 
     # Shell
 
