@@ -12,52 +12,52 @@ if [[ "$OSTYPE" != "darwin"* ]]; then
   if ! command -v zsh &>/dev/null; then
     yay -S --noconfirm --needed zsh
   fi
-
-  yay -S --noconfirm --needed dotbot
-  yay -S --noconfirm --needed oh-my-zsh-git oh-my-zsh-autosuggestions-git oh-my-syntax-highlighting-git
-  yay -S --noconfirm --needed whitesur-cursor-theme-git whitesur-gtk-theme-git whitesur-icon-theme-git
-
-  mkdir ~/.local/share/icons/WhiteSur-cursors
-
-  cd ~ && git clone https://github.com/vinceliuice/WhiteSur-kde && cd WhiteSur-kde && ./install.sh || {
-    echo "Error: WhiteSur-kde installation failed!"
-    # exit 1
-  }
-
-  cd ~ && git clone https://github.com/hyprwm/contrib && cd contrib || {
-    echo "Error: contrib installation failed!"
-    # exit 1
-  }
-
-  cd hyprprop && sudo make install || {
-    echo "Error: hyprprop installation failed!"
-    # exit 1
-  }
-
-  cd grimblast && sudo make install || {
-    echo "Error: grimblast installation failed!"
-    # exit 1
-  }
-
-  cd hdrop && sudo make install || {
-    echo "Error: hdrop installation failed!"
-    # exit 1
-  }
-
-  cd scratchpad && sudo make install || {
-    echo "Error: scratchpad installation failed!"
-    # exit 1
-  }
-
-  cd shellevents && sudo make install || {
-    echo "Error: shellevents installation failed!"
-    # exit 1
-  }
-
-  cd try_swap_workspace && sudo make install || {
-    echo "Error: try_swap_workspace installation failed!"
-    # exit 1
-  }
+  #
+  # yay -S --noconfirm --needed dotbot
+  # yay -S --noconfirm --needed oh-my-zsh-git oh-my-zsh-autosuggestions-git oh-my-syntax-highlighting-git
+  # yay -S --noconfirm --needed whitesur-cursor-theme-git whitesur-gtk-theme-git whitesur-icon-theme-git
+  #
+  # mkdir ~/.local/share/icons/WhiteSur-cursors || true
+  #
+  # cd ~ && git clone https://github.com/vinceliuice/WhiteSur-kde && cd WhiteSur-kde && ./install.sh || {
+  #   echo "Error: WhiteSur-kde installation failed!"
+  #   # exit 1
+  # }
+  #
+  # cd ~ && git clone https://github.com/hyprwm/contrib && cd contrib || {
+  #   echo "Error: contrib installation failed!"
+  #   # exit 1
+  # }
+  #
+  # cd hyprprop && sudo make install || {
+  #   echo "Error: hyprprop installation failed!"
+  #   # exit 1
+  # }
+  #
+  # cd grimblast && sudo make install || {
+  #   echo "Error: grimblast installation failed!"
+  #   # exit 1
+  # }
+  #
+  # cd hdrop && sudo make install || {
+  #   echo "Error: hdrop installation failed!"
+  #   # exit 1
+  # }
+  #
+  # cd scratchpad && sudo make install || {
+  #   echo "Error: scratchpad installation failed!"
+  #   # exit 1
+  # }
+  #
+  # cd shellevents && sudo make install || {
+  #   echo "Error: shellevents installation failed!"
+  #   # exit 1
+  # }
+  #
+  # cd try_swap_workspace && sudo make install || {
+  #   echo "Error: try_swap_workspace installation failed!"
+  #   # exit 1
+  # }
 else
   brew install zsh
   brew install dotbot
