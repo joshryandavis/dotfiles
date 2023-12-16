@@ -1,27 +1,25 @@
 {
-    "github.copilot.enable": {
-        "*": true,
-        "plaintext": true,
-        "markdown": true,
-        "scminput": true
-    },
-    "[dart]": {
-        "editor.formatOnSave": true,
-        "editor.formatOnType": true,
-        "editor.rulers": [
-            80
-        ],
-        "editor.selectionHighlight": false,
-        "editor.suggestSelection": "first",
-        "editor.tabCompletion": "onlySnippets",
-        "editor.wordBasedSuggestions": "off"
-    },
-    // "window.titleBarStyle": "custom",
-    "editor.fontFamily": "JetBrains Mono Nerd Font",
-    "editor.fontSize": 14,
-    "editor.fontWeight": "400",
-    "editor.minimap.enabled": false,
-    "workbench.editor.enablePreview": false,
-    "git.autofetch": true,
-    "circleci.hostUrl": "",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": true
+  },
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
+  },
+  // "window.titleBarStyle": "custom",
+  "editor.fontFamily": "JetBrains Mono Nerd Font",
+  "editor.fontSize": 14,
+  "editor.fontWeight": "400",
+  "editor.minimap.enabled": false,
+  "workbench.editor.enablePreview": false,
+  "git.autofetch": true,
+  "circleci.hostUrl": ""
 }
