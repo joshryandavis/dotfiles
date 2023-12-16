@@ -28,7 +28,9 @@
     # Shell
 
     ~/.zshrc:
-      path: shell/zshrc
+      path: shell/zsh/zshrc
+    ~/.zshenv:
+      path: shell/zsh/zshenv
     ~/.zsh:
       path: shell/zsh
     ~/.bash_logout:
