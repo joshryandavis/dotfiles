@@ -56,10 +56,6 @@
       path: universal/code/settings.json
     ~/.config/VSCodium/User/settings.json:
       path: universal/code/settings.json
-    ~/package.json:
-      path: universal/node/package.json
-    ~/tsconfig.json:
-      path: universal/node/tsconfig.json
     ~/.config/alacritty:
       path: universal/alacritty
 
