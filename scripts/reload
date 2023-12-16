@@ -1,5 +1,15 @@
 #!/bin/zsh
 
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  yabai --stop-service
+  yabai --start-service
+  skhd --stop-service
+  skhd --start-service
+  # notification
+  osascript -e 'display notification "services restarted" with title "services"'
+  exit 0
+fi
+
 killall -9 xdg-desktop-portal-hyprland
 killall -9 xdg-desktop-portal-wlr
 killall -9 xdg-desktop-portal

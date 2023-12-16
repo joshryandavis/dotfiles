@@ -16,4 +16,4 @@ fn - k : skhd -k "up"
 fn - l : skhd -k "right"
 
 # reload yabai and skhd
-shift + cmd - r : yabai --stop-service && yabai --start-service && skhd --stop-service && skhd --start-service
+shift + cmd - r : restart
