@@ -1,4 +1,4 @@
-cmd - return : osascript -e 'tell application "Wezterm" to activate'
+cmd - return : osascript -e 'tell application "kitty" to activate'
 
 cmd - 1: yabai -m space --focus 1
 cmd - 2: yabai -m space --focus 2
