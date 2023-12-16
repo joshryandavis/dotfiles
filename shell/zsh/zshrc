@@ -83,7 +83,7 @@ export PATH="$HOME/.local/bin:$PATH"
 export NODE_PATH=""
 export NODE_PATH="/usr/lib/node_modules"
 
-if [[ $(uname) == "Darwin" ]]; then
+if [[ $(uname) != "Darwin" ]]; then
   # rootless docker on linux
   export DOCKER_HOST=unix:///run/user/1000/docker.sock
 fi
