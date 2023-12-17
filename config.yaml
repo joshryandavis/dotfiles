@@ -81,7 +81,7 @@
       if: "[ `uname` = Darwin ]"
       path: darwin/warp
 
-      # Linux
+    # Linux
 
     ~/.config/swww:
       if: "[ `uname` != Darwin ]"
