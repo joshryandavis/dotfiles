@@ -95,9 +95,6 @@
     ~/.config/fontconfig:
       if: "[ `uname` != Darwin ]"
       path: linux/fontconfig
-    ~/.config/foot:
-      if: "[ `uname` != Darwin ]"
-      path: linux/foot
     ~/.config/dunst:
       if: "[ `uname` != Darwin ]"
       path: linux/dunst

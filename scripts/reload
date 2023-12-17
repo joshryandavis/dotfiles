@@ -13,7 +13,6 @@ fi
 killall -9 xdg-desktop-portal-hyprland
 killall -9 xdg-desktop-portal-wlr
 killall -9 xdg-desktop-portal
-killall -9 swaync
 killall -9 copyq
 killall -9 udiskie
 killall -9 nm-applet
@@ -25,6 +24,7 @@ killall -9 electron
 killall -9 waybar
 killall -9 cider
 killall -9 webcord
+killall -9 dunst
 
 until ! pgrep -f 'waybar'; do sleep 1; done
 
@@ -51,9 +51,9 @@ udiskie --appindicator &
 nm-applet --indicator &
 blueman-applet &
 wayvnc &
-swaync &
 birdtray &
-AppImageLauncher ~/Applications/Cider* &
-webcord &
+# AppImageLauncher ~/Applications/Cider* &
+# webcord &
+dunst &
 
 notify-send -t 1000 "Hyprland started"

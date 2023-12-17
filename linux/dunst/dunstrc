@@ -95,7 +95,7 @@
     frame_width = 3
 
     # Defines color of the frame around the notification window.
-    #frame_color = "#eba0ac"
+    frame_color = "#6c7086"
 
     # Size of gap to display between notifications - requires a compositor.
     # If value is greater than 0, separator_height will be ignored and a border
@@ -109,7 +109,7 @@
     #  * foreground: use the same color as the foreground;
     #  * frame: use the same color as the frame;
     #  * anything else will be interpreted as a X color.
-    separator_color = auto
+    # separator_color = auto
 
     # Sort messages by urgency.
     sort = yes
@@ -123,7 +123,7 @@
 
     ### Text ###
 
-    font = mononoki Nerd Font 8
+    # font = mononoki Nerd Font 8
 
     # The spacing between lines.  If the height is smaller than the
     # font height, it will get raised to the font height.
@@ -163,7 +163,7 @@
     #   %n  progress value if set without any extra characters
     #   %%  Literal %
     # Markup is allowed
-    format = "󰟪 %a\n<b>󰋑 %s</b>\n%b"
+    # format = "󰟪 %a\n<b>󰋑 %s</b>\n%b"
 
     # Alignment of message text.
     # Possible values are "left", "center" and "right".
@@ -203,7 +203,7 @@
     # Set icon theme (only used for recursive icon lookup)
     #icon_theme = Adwaita
     # You can also set multiple icon themes, with the leftmost one being used first.
-    icon_theme = "Tela-circle-dracula"
+    # icon_theme = "Tela-circle-dracula"
 
     # Align icons left/right/top/off
     icon_position = left
@@ -217,7 +217,7 @@
     max_icon_size = 128
 
     # Paths to default icons (only neccesary when not using recursive icon lookup)
-    icon_path = /usr/share/icons/Tela-circle-dracula/16/actions:/usr/share/icons/Tela-circle-dracula/16/apps:/usr/share/icons/Tela-circle-dracula/16/devices:/usr/share/icons/Tela-circle-dracula/16/mimetypes:/usr/share/icons/Tela-circle-dracula/16/panel:/usr/share/icons/Tela-circle-dracula/16/places:/usr/share/icons/Tela-circle-dracula/16/status
+    # icon_path = /usr/share/icons/Tela-circle-dracula/16/actions:/usr/share/icons/Tela-circle-dracula/16/apps:/usr/share/icons/Tela-circle-dracula/16/devices:/usr/share/icons/Tela-circle-dracula/16/mimetypes:/usr/share/icons/Tela-circle-dracula/16/panel:/usr/share/icons/Tela-circle-dracula/16/places:/usr/share/icons/Tela-circle-dracula/16/status
 
     ### History ###
 
@@ -231,10 +231,10 @@
     ### Misc/Advanced ###
 
     # dmenu path.
-    dmenu = /usr/bin/rofi -dmenu -p dunst:
+    # dmenu = /usr/bin/rofi -dmenu -p dunst:
 
     # Browser for opening urls in context menu.
-    browser = /usr/bin/xdg-open
+    # browser = /usr/bin/xdg-open
 
     # Always run rule-defined scripts, even if the notification is suppressed
     always_run_script = true
@@ -295,6 +295,7 @@
     # * context_all: Open context menu for all notifications.
     # These values can be strung together for each mouse event, and
     # will be executed in sequence.
+
     mouse_left_click = context, close_current
     mouse_middle_click = do_action, close_current
     mouse_right_click = close_all
@@ -433,33 +434,19 @@
 #
 # vim: ft=cfg
 
-[Type-1]
-    summary = "t1"
-    format = "<b>%a</b>"
-
-[Type-2]
-    summary = "t2"
-    format = "<span size="250%">%a</span>\n%b"
-
-[urgency_critical]
-    background = "#f5e0dc"
-    foreground = "#1e1e2e"
-    frame_color = "#f38ba8"
-    icon = "~/.config/dunst/icons/critical.svg"
-    timeout = 0
-    # Icon for notifications with critical urgency, uncomment to enable
-    #default_icon = /path/to/icon
-
-[urgency_low]
-    background = "#22232A"
-    foreground = "#E2DFD1"
-    frame_color = "#262C48"
-    icon = "~/.config/dunst/icons/hyprdots.svg"
-    timeout = 10
-
-[urgency_normal]
-    background = "#4D5C78"
-    foreground = "#E2DFD1"
-    frame_color = "#622D28"
-    icon = "~/.config/dunst/icons/hyprdots.svg"
-    timeout = 10
+# [Type-1]
+#     summary = "t1"
+#     format = "<b>%a</b>"
+#
+# [Type-2]
+#     summary = "t2"
+#     format = "<span size="250%">%a</span>\n%b"
+#
+# [urgency_critical]
+#     background = "#f5e0dc"
+#     foreground = "#1e1e2e"
+#     frame_color = "#f38ba8"
+#     icon = "~/.config/dunst/icons/critical.svg"
+#     timeout = 0
+#     # Icon for notifications with critical urgency, uncomment to enable
+#     #default_icon = /path/to/icon
