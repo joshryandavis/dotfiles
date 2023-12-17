@@ -1,4 +1,5 @@
 #!/bin/zsh
 
-alacritty
+# alacritty
+kitty
 # hyprctl dispatch workspace 1

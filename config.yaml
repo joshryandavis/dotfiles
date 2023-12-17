@@ -81,8 +81,11 @@
       if: "[ `uname` = Darwin ]"
       path: darwin/warp
 
-      # Linux
+    # Linux
 
+    ~/.config/waybar:
+      if: "[ `uname` != Darwin ]"
+      path: linux/waybar
     ~/.config/copyq/copyq.conf:
       if: "[ `uname` != Darwin ]"
       path: linux/copyq/copyq.conf
