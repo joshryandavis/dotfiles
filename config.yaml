@@ -139,7 +139,7 @@
       path: linux/latte
     ~/.config/swaync:
       if: "[ `uname` != Darwin ]"
-      path: linux/hyprland/swaync
+      path: linux/swaync
     ~/.config/mimeapps.list:
       if: "[ `uname` != Darwin ]"
       path: linux/xdg/mimeapps.list
@@ -208,10 +208,10 @@
       path: linux/nvidia/nvidia-settings-rc
     ~/.config/waybar:
       if: "[ `uname` != Darwin ]"
-      path: linux/hyprland/waybar
+      path: linux/waybar
     ~/.config/wofi:
       if: "[ `uname` != Darwin ]"
-      path: linux/hyprland/wofi
+      path: linux/wofi
     # # electron flag nonsense
     # ~/.config/electron-flags.conf:
     #   path: linux/electron/electron-flags.conf
