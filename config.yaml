@@ -81,11 +81,10 @@
       if: "[ `uname` = Darwin ]"
       path: darwin/warp
 
-    # Linux
-
-    ~/.config/waybar:
+      # Linux
+    ~/.config/kdeglobals:
       if: "[ `uname` != Darwin ]"
-      path: linux/waybar
+      path: linux/kdeglobals
     ~/.config/copyq/copyq.conf:
       if: "[ `uname` != Darwin ]"
       path: linux/copyq/copyq.conf
@@ -203,10 +202,10 @@
     ~/.nvidia-settings-rc:
       if: "[ `uname` != Darwin ]"
       path: linux/nvidia/nvidia-settings-rc
-    # ~/.config/waybar:
-    #   if: "[ `uname` != Darwin ]"
-    #   path: linux/hyprland/waybar
-    # ~/.config/wofi:
+    ~/.config/waybar:
+      if: "[ `uname` != Darwin ]"
+      path: linux/hyprland/waybar
+    ~/.config/wofi:
       if: "[ `uname` != Darwin ]"
       path: linux/hyprland/wofi
     # # electron flag nonsense
