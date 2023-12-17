@@ -203,10 +203,10 @@
     ~/.nvidia-settings-rc:
       if: "[ `uname` != Darwin ]"
       path: linux/nvidia/nvidia-settings-rc
-    ~/.config/waybar:
-      if: "[ `uname` != Darwin ]"
-      path: linux/hyprland/waybar
-    ~/.config/wofi:
+    # ~/.config/waybar:
+    #   if: "[ `uname` != Darwin ]"
+    #   path: linux/hyprland/waybar
+    # ~/.config/wofi:
       if: "[ `uname` != Darwin ]"
       path: linux/hyprland/wofi
     # # electron flag nonsense
