@@ -83,9 +83,6 @@
 
     # Linux
 
-    ~/.config/swww:
-      if: "[ `uname` != Darwin ]"
-      path: linux/swww
     ~/.config/kdeglobals:
       if: "[ `uname` != Darwin ]"
       path: linux/kdeglobals
@@ -143,9 +140,6 @@
     ~/.config/nwg-look:
       if: "[ `uname` != Darwin ]"
       path: linux/nwg-look
-    ~/.config/nwg-displays:
-      if: "[ `uname` != Darwin ]"
-      path: linux/nwg-displays
     ~/.config/qt5ct:
       if: "[ `uname` != Darwin ]"
       path: linux/qt5ct
@@ -182,9 +176,6 @@
     ~/.config/xfce4:
       if: "[ `uname` != Darwin ]"
       path: linux/xfce4
-    ~/.config/autostart:
-      if: "[ `uname` != Darwin ]"
-      path: linux/autostart
     ~/.config/lutris:
       if: "[ `uname` != Darwin ]"
       path: linux/lutris
@@ -194,12 +185,6 @@
     ~/.Xresources:
       if: "[ `uname` != Darwin ]"
       path: linux/xresources/Xresources
-    ~/.thunderbird/profiles.ini:
-      if: "[ `uname` != Darwin ]"
-      path: linux/thunderbird/profiles.ini
-    ~/.thunderbird/installs.ini:
-      if: "[ `uname` != Darwin ]"
-      path: linux/thunderbird/installs.ini
     ~/.nvidia-settings-rc:
       if: "[ `uname` != Darwin ]"
       path: linux/nvidia/nvidia-settings-rc
