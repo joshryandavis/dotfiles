@@ -82,6 +82,10 @@
       path: darwin/warp
 
       # Linux
+
+    ~/.config/swww:
+      if: "[ `uname` != Darwin ]"
+      path: linux/swww
     ~/.config/kdeglobals:
       if: "[ `uname` != Darwin ]"
       path: linux/kdeglobals
