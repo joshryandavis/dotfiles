@@ -92,6 +92,15 @@
     ~/.config/foot:
       if: "[ `uname` != Darwin ]"
       path: linux/foot
+    ~/.config/dunst:
+      if: "[ `uname` != Darwin ]"
+      path: linux/dunst
+    ~/.config/wlogout:
+      if: "[ `uname` != Darwin ]"
+      path: linux/wlogout
+    ~/.config/swaylock:
+      if: "[ `uname` != Darwin ]"
+      path: linux/swaylock
     ~/.gtkrc-2.0:
       if: "[ `uname` != Darwin ]"
       path: linux/gtk2/gtkrc-2.0
